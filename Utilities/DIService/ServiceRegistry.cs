@@ -2,7 +2,7 @@
 using BL;
 using BL.Interface;
 using DAL;
-using DAL.Interface;
+using DAL.IRepositories;
 using Repository.UnitOfWorks;
 using System;
 using System.Collections.Generic;
@@ -21,10 +21,12 @@ namespace DIService
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().SingleInstance();  
             #region Repository
             builder.RegisterType<SubjectRepository>().As<ISubjectRepository>().AsSelf();
+            builder.RegisterType<UserInfoRepository>().As<IUserInfoRepository>().AsSelf();
             #endregion
 
             #region Managers
             builder.RegisterType<SubjectManager>().As<ISubjectManager>().AsSelf();
+            builder.RegisterType<UserInfoManager>().As<IUserInfoManager>().AsSelf();
             #endregion
 
 

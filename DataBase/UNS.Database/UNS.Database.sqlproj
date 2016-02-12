@@ -68,5 +68,9 @@
     <Build Include="dbo\Tables\Location.sql" />
     <Build Include="dbo\Tables\Exam.sql" />
     <Build Include="dbo\Tables\SystemUser.sql" />
+    <Build Include="dbo\Tables\SystemRole.sql" />
+    <Build Include="dbo\Tables\SystemAction.sql" />
+    <Build Include="dbo\Tables\SystemRoleAction.sql" />
+    <Build Include="dbo\Tables\SystemUserRole.sql" />
   </ItemGroup>
 </Project>

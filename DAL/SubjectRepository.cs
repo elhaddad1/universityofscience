@@ -1,4 +1,4 @@
-﻿using DAL.Interface;
+﻿using DAL.IRepositories;
 using Repository;
 using Repository.Entity;
 using Repository.UnitOfWorks;

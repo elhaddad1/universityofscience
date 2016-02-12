@@ -62,10 +62,25 @@
     <Compile Include="Entity\Location.cs">
       <DependentUpon>DomainModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\Role.cs">
+      <DependentUpon>DomainModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\Student.cs">
       <DependentUpon>DomainModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Subject.cs">
+      <DependentUpon>DomainModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\SystemAction.cs">
+      <DependentUpon>DomainModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\SystemRoleAction.cs">
+      <DependentUpon>DomainModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\SystemUser.cs">
+      <DependentUpon>DomainModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\UserRole.cs">
       <DependentUpon>DomainModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Interface\IMainDBContext.cs" />

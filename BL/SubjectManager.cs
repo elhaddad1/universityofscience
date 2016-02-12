@@ -1,6 +1,6 @@
 ﻿using BL.Interface;
 using DAL;
-using DAL.Interface;
+using DAL.IRepositories;
 using Repository.Entity;
 using Repository.UnitOfWorks;
 using System;
