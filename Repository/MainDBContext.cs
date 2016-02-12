@@ -17,7 +17,14 @@ namespace Repository
 
         public MainDBContext()
         {
-            _dbContext = new USSCEntities();
+            if (this._dbContext == null)
+                _dbContext = new USSCEntities();
+        }
+
+        public DbSet<T> SetDbSet<T>()
+             where T : class
+        {
+            return this._dbContext.Set<T>();
         }
 
     }

@@ -27,7 +27,7 @@ namespace Repository
         public EFRepository(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _objectSet = _unitOfWork.Context.Set<T>();
+            _objectSet = _unitOfWork.Context.SetDbSet<T>();
         }
         public IQueryable<T> GetAll(Func<T, bool> predicate = null)
         {
