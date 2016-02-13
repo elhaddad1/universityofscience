@@ -28,12 +28,12 @@ namespace Repository.Model
     
         public virtual DbSet<Exam> Exams { get; set; }
         public virtual DbSet<Location> Locations { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<Subject> Subjects { get; set; }
-        public virtual DbSet<SystemUser> SystemUsers { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<SystemAction> SystemActions { get; set; }
-        public virtual DbSet<UserRole> UserRoles { get; set; }
         public virtual DbSet<SystemRoleAction> SystemRoleActions { get; set; }
+        public virtual DbSet<SystemUser> SystemUsers { get; set; }
+        public virtual DbSet<UserRole> UserRoles { get; set; }
     }
 }

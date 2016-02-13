@@ -97,6 +97,17 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="USSCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="USSCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Exams" EntityType="USSCModel.Exam" />
+          <EntitySet Name="Locations" EntityType="USSCModel.Location" />
+          <EntitySet Name="Roles" EntityType="USSCModel.Role" />
+          <EntitySet Name="Students" EntityType="USSCModel.Student" />
+          <EntitySet Name="Subjects" EntityType="USSCModel.Subject" />
+          <EntitySet Name="SystemActions" EntityType="USSCModel.SystemAction" />
+          <EntitySet Name="SystemRoleActions" EntityType="USSCModel.SystemRoleAction" />
+          <EntitySet Name="SystemUsers" EntityType="USSCModel.SystemUser" />
+          <EntitySet Name="UserRoles" EntityType="USSCModel.UserRole" />
+        </EntityContainer>
         <EntityType Name="Exam">
           <Key>
             <PropertyRef Name="ID" />
@@ -113,6 +124,13 @@
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Capacty" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Notes" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
@@ -133,17 +151,21 @@
           <Property Name="Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="USSCEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Exams" EntityType="Self.Exam" />
-          <EntitySet Name="Locations" EntityType="Self.Location" />
-          <EntitySet Name="Students" EntityType="Self.Student" />
-          <EntitySet Name="Subjects" EntityType="Self.Subject" />
-          <EntitySet Name="SystemUsers" EntityType="USSCModel.SystemUser" />
-          <EntitySet Name="Roles" EntityType="USSCModel.Role" />
-          <EntitySet Name="SystemActions" EntityType="USSCModel.SystemAction" />
-          <EntitySet Name="UserRoles" EntityType="USSCModel.UserRole" />
-          <EntitySet Name="SystemRoleActions" EntityType="USSCModel.SystemRoleAction" />
-        </EntityContainer>
+        <EntityType Name="SystemAction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SystemRoleAction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleId" Type="Int32" />
+          <Property Name="ActionId" Type="Int32" />
+        </EntityType>
         <EntityType Name="SystemUser">
           <Key>
             <PropertyRef Name="Id" />
@@ -155,20 +177,6 @@
           <Property Name="FullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="IsActive" Type="Boolean" Nullable="false" />
         </EntityType>
-        <EntityType Name="Role">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="SystemAction">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="UserRole">
           <Key>
             <PropertyRef Name="Id" />
@@ -177,15 +185,7 @@
           <Property Name="UserId" Type="Int32" />
           <Property Name="RoleId" Type="Int32" />
         </EntityType>
-        <EntityType Name="SystemRoleAction">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="RoleId" Type="Int32" />
-          <Property Name="ActionId" Type="Int32" />
-        </EntityType>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -194,40 +194,65 @@
           <EntitySetMapping Name="Exams">
             <EntityTypeMapping TypeName="USSCModel.Exam">
               <MappingFragment StoreEntitySet="Exam">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
                 <ScalarProperty Name="ExamDate" ColumnName="ExamDate" />
+                <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Locations">
             <EntityTypeMapping TypeName="USSCModel.Location">
               <MappingFragment StoreEntitySet="Location">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Capacty" ColumnName="Capacty" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Capacty" ColumnName="Capacty" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="USSCModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Students">
             <EntityTypeMapping TypeName="USSCModel.Student">
               <MappingFragment StoreEntitySet="Student">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="SID" ColumnName="SID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Minor" ColumnName="Minor" />
-                <ScalarProperty Name="Major" ColumnName="Major" />
                 <ScalarProperty Name="Division" ColumnName="Division" />
+                <ScalarProperty Name="Major" ColumnName="Major" />
+                <ScalarProperty Name="Minor" ColumnName="Minor" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Subjects">
             <EntityTypeMapping TypeName="USSCModel.Subject">
               <MappingFragment StoreEntitySet="Subject">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Code" ColumnName="Code" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemActions">
+            <EntityTypeMapping TypeName="USSCModel.SystemAction">
+              <MappingFragment StoreEntitySet="SystemAction">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemRoleActions">
+            <EntityTypeMapping TypeName="USSCModel.SystemRoleAction">
+              <MappingFragment StoreEntitySet="SystemRoleAction">
+                <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -243,36 +268,11 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Roles">
-            <EntityTypeMapping TypeName="USSCModel.Role">
-              <MappingFragment StoreEntitySet="Role">
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="SystemActions">
-            <EntityTypeMapping TypeName="USSCModel.SystemAction">
-              <MappingFragment StoreEntitySet="SystemAction">
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="UserRoles">
             <EntityTypeMapping TypeName="USSCModel.UserRole">
               <MappingFragment StoreEntitySet="UserRole">
                 <ScalarProperty Name="RoleId" ColumnName="RoleId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="SystemRoleActions">
-            <EntityTypeMapping TypeName="USSCModel.SystemRoleAction">
-              <MappingFragment StoreEntitySet="SystemRoleAction">
-                <ScalarProperty Name="ActionId" ColumnName="ActionId" />
-                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

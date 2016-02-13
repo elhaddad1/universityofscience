@@ -5,15 +5,15 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="20fe91092dca4d028d704c0e2b175e26" Name="Diagram1">
-        <EntityTypeShape EntityType="USSCModel.Exam" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="USSCModel.Location" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="USSCModel.Student" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="USSCModel.Subject" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="USSCModel.SystemUser" Width="1.5" PointX="5.375" PointY="0.75" />
-        <EntityTypeShape EntityType="USSCModel.Role" Width="1.5" PointX="5.75" PointY="3.75" />
-        <EntityTypeShape EntityType="USSCModel.SystemAction" Width="1.5" PointX="0.75" PointY="6.75" />
-        <EntityTypeShape EntityType="USSCModel.UserRole" Width="1.5" PointX="5.375" PointY="6.75" />
-        <EntityTypeShape EntityType="USSCModel.SystemRoleAction" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="USSCModel.Exam" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="USSCModel.Location" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="USSCModel.Role" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="USSCModel.Student" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="USSCModel.Subject" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="USSCModel.SystemAction" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="USSCModel.SystemRoleAction" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="USSCModel.SystemUser" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="USSCModel.UserRole" Width="1.5" PointX="2.75" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
