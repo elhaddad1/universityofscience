@@ -31,6 +31,7 @@ namespace DAL
             userData.Password = user.Password;
             userData.UserName = user.UserName;
             userData.FullName = user.FullName;
+            userData.UserId = user.Id;
 
             var role = this._unitOfWork.Context.UserRoles.Where(a => a.UserId == user.Id).OrderBy(a => a.RoleId).LastOrDefault();
 

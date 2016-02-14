@@ -8,6 +8,7 @@ namespace CustomModel
 {
     public class UserInfo
     {
+        public int UserId { get; set; }
         public string UserName { get; set; }
         public List<int?> Action { get; set; }
         public int? Role { get; set; }

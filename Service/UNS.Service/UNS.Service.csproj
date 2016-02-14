@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -104,10 +105,25 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BL\BL.csproj">
+      <Project>{92e8b6df-5ff1-4028-ad00-3652dbf70994}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Repositories\CustomModel\CustomModel.csproj">
+      <Project>{adeb061b-981c-49f1-8064-6c6c4838829e}</Project>
+      <Name>CustomModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Security\Security.Identity\Security.Identity.csproj">
+      <Project>{9c91e25c-8903-42bd-81e8-0daf6f9fa181}</Project>
+      <Name>Security.Identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Support\Support\Support.csproj">
+      <Project>{6cc6c7ca-bfe6-4d4c-a9e7-fb4eb5070fa5}</Project>
+      <Name>Support</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Utilities\DIService\DIService.csproj">
       <Project>{0024fcb4-688d-4cea-97ea-405d54409396}</Project>
       <Name>DIService</Name>
