@@ -59,8 +59,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\services\StudentService.js" />
     <Content Include="app\Student\AddNewStudent.html" />
     <Content Include="app\Student\AddNewStudent.js" />
+    <Content Include="app\universityofscience.config.route.js" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.svg" />
