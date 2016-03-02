@@ -1,0 +1,150 @@
+﻿
+<div>
+
+    <div data-ng-include="'app/Shared/partialView/_loading.html'"></div>
+
+    <form name="dataentry" id="dataentry" novalidate ng-init="InitScreen()">
+
+
+
+
+        <div class="hbox hbox-auto-xs hbox-auto-sm ">
+            <div class="bg-light lter b-b wrapper-md">
+                <h1 class="m-n font-thin h3">
+                    <i class="fa  fa-money text-white bg-info lter p10 fs25 mr5 ml5 centerNav"></i>
+                    {{"PR.PayrollDataEntry.PayrollDataEntry"|translate}}
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="wrapper-md">
+
+            
+            <div ng-show="dataentry.$submitted&&!dataentry.$valid"  class="p-r">
+                <i class="fa fa-warning validationMessage p-a" style="top:12px"></i>
+                <div >
+                    <div class=" alert alert-danger">
+                        <ol id="errors" class="">
+                            <li ng-show="dataentry.Department.$error.required || dataentry.year.$error.required || dataentry.month.$error.required || dataentry.PayrollItem.$error.required " translate="PR.unhold.msg"></li></ol>
+                    </div>
+                </div>
+            </div>
+
+
+         
+
+
+
+            <div class="panel panel-default ">
+                <div class="panel-heading font-bold pn bg-info">
+                    <i class="fa fa-search fs16 p12 mr10 bg-primary "></i>
+                    <span>   {{"PR.PayrollDataEntry.Payrollitemdataentry"|translate}}  </span>
+                </div>
+
+                <div class="panel-body">
+
+
+                    <div class="form-group col-lg-12">
+                        <label class="col-lg-1 control-label pt10 pn mn text-right"> {{"PR.PayrollDataEntry.Department"|translate}}</label>
+                        <div class="col-lg-4">
+
+
+                            <select kendo-drop-down-list id="selectDepartment"
+                                    k-options="DepartmentOptions" ng-model="DepartmentID"
+                                    name="Department" class="borderMe w-full-imp " k-data-source="DepartmentList"
+                                    required></select>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-group col-lg-12">
+
+
+
+
+                        <label class="col-lg-1 control-label pt10  pn mn text-right">
+
+                            {{"PR.PayrollDataEntry.YearMonth"|translate}}
+
+
+                        </label>
+                        <div class="col-lg-2">
+                            <select kendo-drop-down-list="ddlYears" id="yearSelect" name="year"
+                                    k-options="yearselect" class="borderMe w-full-imp " ng-model="YearID"
+                                    required></select>
+                        </div>
+                        <div class="col-lg-2">
+                            <select kendo-drop-down-list="ddlMonths" id="monthSelect" k-data-source="MonthList" name="month"
+                                    k-options="monthselect" class="borderMe  w-full-imp" ng-model="MonthID"></select>
+                        </div>
+                        <div class="col-lg-1 pn mn">
+                            <i tooltip="Closed" tooltip-placement="bottom" ng-show="IsClosed==true" class="fs35 lock fa fa-lock text-danger"></i>
+                            <i tooltip="Open" tooltip-placement="bottom" ng-show="IsClosed==false" class="fs35 lock fa fa-unlock  text-success"></i>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <label class="col-lg-1 control-label pt10  pn mn text-right">   {{"PR.PayrollDataEntry.PayrollItem"|translate}} </label>
+                        <div class="col-lg-4">
+
+
+                            <select kendo-drop-down-list="ddlItems" id="itemSelect" ng-model="payrollItemID" name="PayrollItem"
+                                    k-options="itemSelectOptions" class="borderMe w-full-imp " k-data-source="ItemList"
+                                    required></select>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <footer class="panel-footer text-right bg-light lter">
+
+
+                    <button type="submit" id="importFromExcelsheet" ng-click="payrolldataentryPopup()" class="btn btn-success ng-binding">
+
+
+                        {{"PR.PayrollDataEntry.Importfromexcelsheet"|translate}}
+
+                    </button>
+
+                    <button id="search" class="btn btn-success ng-binding" type="submit" ng-click="GetData(dataentry)">
+
+
+                        {{"PR.PayrollDataEntry.search"|translate}}
+
+                    </button>
+
+                </footer>
+
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading pn font-bold">
+                    <i class="fa fa-money fs16 p12 mr10 bg-primary"></i>
+
+                    {{"PR.PayrollDataEntry.EmployeesItemsValue"|translate}}
+
+
+                </div>
+                <div class="panel-body">
+                    <div kendo-grid="EmployeesItemsGrid" id="employeesItemsGrid" k-options="EmployeesItemsGridOptions" on-filter-only="gg" class="standardGrid small"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>

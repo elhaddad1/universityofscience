@@ -1,0 +1,56 @@
+﻿    
+
+
+    .ai-validate-message { color: red; font-size: 90%; display:block; margin-top: 4px; margin-left: 2px; } /* validation error message style */
+    .ai-validate-message-focus { display: none !important; } /* when "focusDelay is enabled hides validation message until blur */
+    .ai-validate-message.summary { display: none !important; } /* validation error message when summary is enabled */
+
+    .ai-validate-summary  { margin: 0px; list-style:none; padding: 0px; } /* validation summary list style */
+    .ai-validate-summary-focus { display: none !important; }
+    .ai-validate-summary li { margin-top: 3px !important; } /* validation summary list item */ 
+
+    .ai-validate:focus /* sets focused element to match Twitter Bootstrap comment to disable */
+    { 
+      outline: 0 !important;
+      border-color: rgba(82, 168, 236, 0.8) !important;
+      /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6) !important;
+      -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6) !important;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6) !important;
+      -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;*/
+    }
+
+   input.ng-invalid.ng-dirty:not(:focus), select.ng-invalid.ng-dirty:not(:focus), textarea.ng-invalid.ng-dirty:not(:focus) /* shows box shadow on invalid dirty validation message error */
+    {     
+      outline: 0;
+      border-color: rgba(255, 1, 1, 0.8) !important;
+      /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,1,1,.6) !important;
+      -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,1,1,.6) !important;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,1,1,.6) !important;
+      -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;*/
+    }
+
+
+   
+  .ng-invalid.ng-dirty:not(:focus), select.ng-invalid.ng-dirty:not(:focus), textarea.ng-invalid.ng-dirty:not(:focus) /* shows box shadow on invalid dirty validation message error */
+    {     
+      outline: 0;
+      border-color: rgba(255, 1, 1, 0.8) !important;
+      /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,1,1,.6) !important;
+      -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,1,1,.6) !important;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,1,1,.6) !important;
+      -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;*/
+    }
+
+  /*form .ng-invalid.ng-dirty:not(:focus), select.ng-invalid.ng-dirty:not(:focus), textarea.ng-invalid.ng-dirty:not(:focus) 
+    {     
+      outline: 0 !important;
+       box-shadow: none !important;
+     
+     
+    }*/
+
+
+ 

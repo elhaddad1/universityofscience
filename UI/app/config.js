@@ -1,41 +1,79 @@
-﻿(function () {
-    'use strict';
+﻿// config
+'use strict';
 
-    var app = angular.module('app');
+var app =
+angular.module('app')
+  .config(
+    ['$controllerProvider', '$compileProvider', '$filterProvider', '$provide',
+    function ($controllerProvider, $compileProvider, $filterProvider, $provide) {
 
-    // Configure Toastr
-    toastr.options.timeOut = 4000;
-    toastr.options.positionClass = 'toast-bottom-right';
+        // lazy controller, directive and service
+        app.controller = $controllerProvider.register;
+        app.directive = $compileProvider.directive;
+        app.filter = $filterProvider.register;
+        app.factory = $provide.factory;
+        app.service = $provide.service;
+        app.constant = $provide.constant;
+        app.value = $provide.value;
 
-    // For use with the HotTowel-Angular-Breeze add-on that uses Breeze
-    var remoteServiceName = 'breeze/Breeze';
+        // $compileProvider.debugInfoEnabled(false);
+    }
+    ])
+    .run(function ($rootScope, $http, $q, $state, $log) {
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            return loginService($http, $q, $rootScope, $state, $log).AuthorizeUser(event, toState);
+        });
 
-    var events = {
-        controllerActivateSuccess: 'controller.activateSuccess',
-        spinnerToggle: 'spinner.toggle'
-    };
 
-    var config = {
-        appErrorPrefix: '[HT Error] ', //Configure the exceptionHandler decorator
-        docTitle: 'HotTowel: ',
-        events: events,
-        remoteServiceName: remoteServiceName,
-        version: '2.1.0'
-    };
+        return $q.when(loginService($http, $q, $rootScope, $state, $log).Login()).then(function () {
+        });
+    });
 
-    app.value('config', config);
-    
-    app.config(['$logProvider', function ($logProvider) {
-        // turn debugging off/on (no info or warn)
-        if ($logProvider.debugEnabled) {
-            $logProvider.debugEnabled(true);
+app.factory('httpInterceptor', function ($q, $rootScope, $log, $injector) {
+
+    var loadingCount = 0;
+    var $state;
+
+    return {
+        request: function (config) {
+            if (++loadingCount === 1) $rootScope.$broadcast('loading:progress');
+            return config || $q.when(config);
+        },
+
+        response: function (response) {
+            if (--loadingCount === 0) $rootScope.$broadcast('loading:finish');
+            return response || $q.when(response);
+        },
+
+        responseError: function (response) {
+            if (--loadingCount === 0) {
+
+                $rootScope.$broadcast('loading:finish');
+                $rootScope.$broadcast('loading:error');
+            }
+
+            // console.log('ERRRRRRRRRRRRRR')
+            // $scope.showProgress = false;
+            //  toaster.pop('error', '', $translate.instant('MP.ERROR'));
+            // handle any bad request or unauthorized status
+            if (response.status == 400 || response.status == 401) {
+                //if ($rootScope.errorList == undefined) {
+                //    $rootScope.errorList = [];
+                //}
+                //$rootScope.errorList.push(response.data);
+                //$log.error(response.data);
+                if (!$state) {
+                    $state = $injector.get('$state');
+                }
+                $state.go("app.error");
+            }
+
+            return true;//$q.reject(response);
         }
-    }]);
-    
-    //#region Configure the common services via commonConfig
-    app.config(['commonConfigProvider', function (cfg) {
-        cfg.config.controllerActivateSuccessEvent = config.events.controllerActivateSuccess;
-        cfg.config.spinnerToggleEvent = config.events.spinnerToggle;
-    }]);
-    //#endregion
-})();
+    };
+
+}).config(function ($httpProvider) {
+
+    $httpProvider.interceptors.push('httpInterceptor');
+
+});

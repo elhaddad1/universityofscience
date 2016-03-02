@@ -1,0 +1,349 @@
+/* ARABIC  TRANSLATION*/
+
+.ar {
+    .app-aside-dock .navi > ul > li > ul {
+        left: 0 !important;
+        right: 100% !important;
+    }
+
+    .app-aside-fixed .navi > ul > li > a i {
+        line-height: initial;
+    }
+
+    .app-aside-fixed .app-header .navbar-header {
+        position: initial;
+    }
+
+    .app-aside-dock .app-content, .app-aside-dock .app-footer {
+        margin-right: 0px !important;
+        margin-left: inherit;
+    }
+
+    .app-aside-dock li.bordernav.ng-scope {
+        width: 200px;
+    }
+
+    .app-aside-dock .app-content-body {
+        margin-top: 43px !important;
+    }
+
+    .app-aside {
+        float: right;
+    }
+
+    .navbar-header {
+        float: right !important;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-collapse, .app-content, .app-footer {
+            margin-right: 235px;
+            margin-left: inherit;
+        }
+
+        .app-aside-folded .navbar-collapse,
+        .app-aside-folded .app-content,
+        .app-aside-folded .app-footer {
+            margin-right: 60px;
+        }
+
+        .app-aside-dock .app-aside-fixed .navbar-collapse,
+        .app-aside-dock .app-aside-fixed .app-content,
+        .app-aside-dock .app-aside-fixed .app-footer {
+            margin-right: 0px;
+        }
+    }
+
+    .navi {
+        /*text-align:right;*/
+    }
+
+    .navi a[href] {
+        direction: rtl;
+        text-align: right;
+    }
+
+    .navi i.fa {
+        margin-right: inherit;
+    }
+
+    .navi ul.nav li li a {
+        /* padding-left: 55px; */
+        /* padding-left: 42px; */
+        padding-right: 56px;
+        padding-left: inherit;
+    }
+
+    .nav i.fa {
+        margin-right: -10px !important;
+    }
+
+    .nav i.fa {
+        margin-left: 5px !important;
+    }
+
+    //to override that (nav i fa) style 
+    //that I dont know it's
+    .navi-wrap .nav i.fa {
+        margin-left: inherit !important;
+        
+    }
+
+    .nav input {
+        text-align: right;
+    }
+
+    .nav i.fa.fa-search {
+        padding-right: 10px !important;
+    }
+
+    .k-rtl .panel .panel-heading i.mr10 {
+        margin-right: inherit !important;
+        margin-left: 10px;
+    }
+
+    div#app {
+        background-image: url(../img/bg_logo_r.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+    }
+
+    .bordernav {
+        border-left: 1px solid #dee5e7 !important;
+    }
+
+    span.font-bold {
+        margin-right: 10px;
+    }
+
+    ul.nav.navbar-nav.navbar-right {
+        float: left !important;
+
+        /* transform: scaleX(-1);*/
+    }
+
+    .navbar-nav {
+        float: right;
+    }
+
+    span.thumb-sm.avatar.pull-right.m-t-n-sm.m-b-n-sm.m-l-sm {
+        float: left !important;
+        margin-right: 5px;
+        margin-left: -3px;
+    }
+
+    .navbar-collapse, .app-content, .app-footer {
+        margin-right: 235px;
+        margin-left: inherit;
+    }
+
+    .app-aside-dock .app-aside-fixed .navbar-collapse,
+    .app-aside-dock .app-aside-fixed .app-content,
+    .app-aside-dock .app-aside-fixed .app-footer {
+        margin-right: 0px;
+        margin-left: inherit;
+    }
+
+    span.fa.pull-right.mt15.mr15.fa-plus {
+        float: left !important;
+        margin-left: 10px !important;
+    }
+
+    .collapseLink .fa.pull-right {
+        float: left !important;
+        margin-left: 10px !important;
+    }
+
+    a.pull-right.btn.btn-sm.btn-info.m-t-n-xs.ng-binding {
+        float: left !important;
+    }
+
+    span.k-dropdown-wrap.k-state-default {
+        text-align: right;
+    }
+
+    span.k-input {
+        text-align: right;
+    }
+
+    .i-checks > i {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .nav.nav-sub li a[ui-sref]:hover {
+        -webkit-transform: translateX(-9px);
+        -ms-transform: translateX(-9px);
+        -o-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+
+    .standardGrid .k-widget.k-dropdown.k-header.k-dropdown-operator {
+        right: inherit;
+        left: -4px;
+        top: -46px;
+
+        /*z-index: 99999;*/
+        opacity: 0.2;
+        transition: all 0.3s;
+    }
+
+    /*for making space for the date field filter on grid*/
+
+    .k-filtercell:hover .k-datepicker + * + .k-button {
+        left: -41px;
+    }
+
+    .k-filtercell > span:not(.k-operator-hidden) {
+        //    padding-right: 0px!important;
+        padding-right: inherit !important;
+        padding-left: 0px !important;
+    }
+
+    .k-filtercell .k-picker-wrap {
+        padding-right: inherit;
+        padding-left: 0;
+    }
+
+    .k-filtercell:hover .k-picker-wrap {
+        padding-right: inherit;
+        padding-left: 0;
+    }
+
+    /*END*/
+
+    // problem with scheduler arabic
+    th.k-slot-cell {
+        border-left-color: transparent !important;
+    }
+
+    .k-link.k-nav-prev, .k-link.k-nav-next {
+        transform: rotate(180deg);
+    }
+
+    .k-link.k-nav-prev.k-state-hover, .k-link.k-nav-next.k-state-hover {
+        transform: rotate(0deg);
+    }
+
+    .tree-icon.fa.fa-caret-right {
+        transform: rotate(180deg);
+    }
+
+    // .k-pager-info.k-label{direction:initial}
+
+    // for flip the tree levels in arabic
+
+    @for $i from 1 through 9 {
+        ul.nav.nav-list.abn-tree .level-#{$i} .indented {
+            position: relative;
+            left: initial;
+            right: ($i - 1) * 20 + px;
+        }
+    }
+
+    .indented.tree-icon {
+        float: right !important;
+    }
+
+    a .indented.tree-icon {
+        margin-right: initial !important;
+    }
+
+    .indented.tree-label {
+        // display: block;
+        margin-left: initial;
+        margin-right: 16px;
+    }
+
+    // END
+
+    @for $i from 1 through 100 {
+        .flip-mr#{$i} {
+            margin-right: initial !important;
+            margin-left: $i + px;
+        }
+
+        .flip-ml#{$i} {
+            margin-left: initial !important;
+            margin-right: $i + px;
+        }
+    }
+
+    .ar-float-right {
+        float: right;
+    }
+
+    .actions i.mr5 {
+        @extend .flip-mr5;
+    }
+
+    .panel-heading > i.mr10 {
+        margin-right: initial !important;
+        margin-left: 10px;
+    }
+
+    .k-link.k-nav-prev:not(.k-state-hover) > span, .k-link.k-nav-next:not(.k-state-hover) > span {
+        // transform: rotate(180deg);
+        margin-top: -4px;
+    }
+
+	.k-grid .k-grid-header th.k-header>.k-link {
+    font-size: 1.1em;
+	}
+	.panel-footer.text-right{
+	text-align:left;
+	}
+	.col-lg-2, .col-lg-1 {
+    padding-right: 15px !important;
+}
+#errors {
+    border-right: 5px solid #a94442;
+	border-left: 0px solid #a94442;
+	margin-right: 27px;
+	margin-left: 0px;
+	}
+.alert {
+    margin-left: 0px;
+	margin-right: 45px;
+}
+ol#errors {
+    margin-bottom: 0px;
+}
+
+
+
+//added to solve the tooltip in arabic grid that appear very strangly
+//in column of icon (blacklisted)
+.rehireEmployee {
+    td:nth-child(1) .tooltip {
+     right: 39px;
+       left: 12px !important;
+    }
+
+   th:nth-child(1)[data-field] a {
+       text-align: right;
+    }
+
+  td:nth-child(1) {
+ //   position: relative;
+   }
+}
+
+.schedulerModal .calendarDiv .selectEmps .pull-right , .schedulerModal .pull-right
+{
+float: left !important;
+}
+.schedulerModal .calendarDiv .col-sm-5 , .schedulerModal .calendarDiv .col-sm-7
+{
+padding-right:15px !important;
+}
+.k-scheduler-weekview .k-event
+{
+margin-left: -5px !important;
+}
+
+
+}
+
+/*E N D  A R A B I C  T R A N S L A T I O N*/
