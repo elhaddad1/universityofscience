@@ -1,0 +1,80 @@
+﻿
+<div data-ng-include=" 'app/Shared/partialView/_loading.html' "></div>
+<form name="myform" id="myform" novalidate autocomplete="off" ng-submit="Save(myform)">
+
+    <div class=" actions">
+        <button class="btn btn-white btn-xs mr5 fs14 ng-binding" id="save" type="submit" ng-click="SaveOnly()" ng-show="!isEdit">
+            <i class="glyphicon glyphicon-floppy-disk mr5"></i> {{"PR.common.Save"|translate}}
+        </button>
+        <button class="btn btn-white btn-xs mr5 fs14 ng-binding" id="saveAndClose" type="submit" ng-click="SaveAndClose()">
+            <i class="glyphicon glyphicon-floppy-remove mr5"></i>  {{"PR.common.Saveandclose"|translate}}
+        </button>
+        <button class="btn btn-white btn-xs mr5 fs14 ng-binding" id="clear" type="button" ng-click="ClearData()" ng-show="!isEdit">
+            <i class="glyphicon glyphicon-refresh mr5"></i>  {{"PR.common.Clear"|translate}}
+        </button>
+        <button class="btn btn-white btn-xs mr5 fs14 ng-binding" id="cancel" type="button" ng-click="Cancel()">
+            <i class="glyphicon glyphicon-exclamation-sign mr5"></i> {{"PR.common.Cancel"|translate}}
+        </button>
+    </div>
+
+    <div class="hbox hbox-auto-xs hbox-auto-sm pt35">
+        <div class="bg-light lter b-b wrapper-md">
+            <h1 class="m-n font-thin h3">
+                <i class="fa  fa-money text-white bg-info lter p10 fs25 mr5 ml5 centerNav"></i>
+                {{"PR.unhold.EmployeeSalaryHold"|translate}}
+            </h1>
+        </div>
+    </div>
+
+    <div class="wrapper-md">
+
+        <div ng-show="myform.$submitted&&!myform.$valid" class="p-r">
+            <i class="fa fa-warning validationMessage p-a" style="top:12px"></i>
+            <div>
+                <div class=" alert alert-danger">
+                    <ol id="errors" class="">
+                        <li ng-show="myform.ddlReasons.$error.required" translate="PR.unhold.msg"></li>
+                        <li ng-show="myform.ddlEmployee.$error.required" translate="PR.unhold.msg"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel   panel-default ">
+            <div class="panel-heading font-bold pn bg-info">
+                <i class="fa fa-money fs16 p12 mr10 bg-primary "></i>
+                <span> {{"PR.unhold.EmployeeSalaryholddetails"|translate}}    </span>
+            </div>
+
+
+
+            <div class="panel-body">
+                <div class="form-group  clearfix">
+                    <div class="col-lg-4">
+                        <label>  {{"PR.unhold.Department"|translate}} </label>
+                        <dep-tree tree-control="$parent.depTree" name="depTree" class="borderme" not-empty-array ng-model="objSalaryHold.DepartmentID" node-changed="onDepartmentChange" unabletoedit></dep-tree>
+                    </div>
+                    <div class="col-lg-4">
+                        <label>    {{"PR.unhold.Position"|translate}} </label>
+                        <select kendo-drop-down-list="ddlPosition" name="ddlPosition" ng-model="objSalaryHold.PositionID" k-data-source="PositionList" k-options="PositionOptions" class="controlborder"></select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label>   {{"PR.unhold.Employee"|translate}} <b class="text-danger ">*</b></label>
+                        <select kendo-drop-down-list="ddlEmployee" name="ddlEmployee" ng-model="objSalaryHold.EmployeeID" k-data-source="EmployeeList" k-options="EmployeeOptions" class="borderMe w-full-imp" required></select>
+                    </div>
+                </div>
+                <div class="form-group  clearfix">
+                    <div class="col-lg-4">
+                        <label>   {{"PR.unhold.Reason"|translate}}  <b class="text-danger ">*</b> </label>
+                        <select kendo-drop-down-list="ddlReasons" name="ddlReasons" ng-model="objSalaryHold.HoldReasonID" k-data-source="ReasonList" k-options="ReasonOptions" class=" borderMe w-full-imp" required></select>
+                    </div>
+                    <div class="col-lg-8">
+                        <label> {{"PR.unhold.Note"|translate}}    </label>
+                        <textarea placeholder='{{"PR.unhold.WriteaNote"|translate}}' class="form-control k-textbox " ng-model="objSalaryHold.Note" style=" width:100%; resize: none;  "></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

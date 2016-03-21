@@ -1,0 +1,309 @@
+﻿
+
+
+    <div data-ng-include="'app/Shared/partialView/_loading.html'"></div>
+
+    <form name="dataentry" novalidate>
+
+	   <div class="wrapper-md ">
+
+	       	
+	       <div class="wrapper-md pn panel panel-default">    
+               
+               
+               
+                       
+	 
+	           <div class="panel-heading font-bold pn ">
+	               <i class="fa fa-user fs16 p12 mr10 bg-primary "></i>
+	               <span>  {{"PR.PayrollDataEntry.Importfromexcelsheet"|translate}} </span>
+	 
+	               <button id="close" type="button" class="close p5" ng-click="cancel()" aria-hidden="true">&times;</button>
+	 
+	           </div>
+
+
+               
+            <div ng-show="dataentry.$submitted&&!dataentry.$valid"  class="p-r p5">
+                <i class="fa fa-warning validationMessage p-a" style="top:12px"></i>
+                <div >
+                    <div class=" alert alert-danger mbn ">
+                        <ol id="errors" class="">
+                            <li ng-show="dataentry.empcode.$error.required||dataentry.Amount.$error.required" translate="PR.unhold.msg"></li>
+                               
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+               
+
+	
+               <div class="panel-body pbn mbn ">
+
+                     <div class="panel panel-default">
+                <div class="panel-heading pn font-bold"><i class="fa fa-money fs16 p12 mr10 bg-primary"></i>   {{"PR.PayrollDataEntry.Payrollitemdataentry"|translate}} </div>
+             
+	
+	           <div class="panel-body">
+	 
+
+                    <div class="form-group col-lg-12 ">
+
+                     
+                        
+
+                        <label class="col-lg-2 control-label pt10  pn mn text-right">{{"PR.PayrollDataEntry.YearMonth"|translate}} </label>
+                        <div class="col-lg-3">
+                            <select kendo-drop-down-list id="yearSelect"
+                                   k-options="yearselect" class="borderMe w-full-imp "
+                                    required></select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select kendo-drop-down-list
+                                  k-options="monthselect" id="monthSelect" class="borderMe  w-full-imp" ></select>
+                        </div>
+                     
+                       </div>
+                  
+
+                <div class="form-group col-lg-12 ">
+                        <label class="col-lg-2 control-label pt10  pn mn text-right"> {{"PR.PayrollDataEntry.PayrollItem"|translate}}</label>
+                        <div class="col-lg-6">
+
+
+                              <select kendo-drop-down-list id="itemSelect"
+                                     k-options="itemselect" class="borderMe w-full-imp "
+                                    required></select>
+
+
+                     
+                       
+                     
+                    </div>
+                    </div>
+
+                  </div>
+        
+
+
+
+            </div>
+                   
+                   
+                     <div class="panel panel-default">
+                <div class="panel-heading pn font-bold"><i class="fa fa-money fs16 p12 mr10 bg-primary"></i> {{"PR.PayrollDataEntry.ExcelSheetpath"|translate}}</div>
+             
+	
+	           <div class="panel-body">
+	 
+
+                 
+                  
+
+                <div class="form-group col-lg-12 ">
+                        <label class="col-lg-2 control-label pt10  pn mn text-right"> {{"PR.PayrollDataEntry.Filepath"|translate}}</label>
+                        <div class="col-lg-6">
+                            
+                            <input  class="k-textbox " id="filePath"  placeholder='{{"PR.PayrollDataEntry.Filepath"|translate}}'>
+
+
+                    </div>
+                    <div  class="form-group col-lg-4">
+
+      <button type="submit" id="Browse" ng-click="payrolldataentryPopup()" class="btn btn-success mr5 ng-binding">{{"PR.PayrollDataEntry.Browse"|translate}}</button>
+      <button type="submit" id="Process" ng-click="payrolldataentryPopup()" class="btn btn-info mr5 ng-binding">{{"PR.PayrollDataEntry.Process"|translate}}</button>
+      
+
+                    </div>
+                    </div>
+
+                  </div>
+        
+
+
+
+            </div>
+
+               
+
+                
+                     <div class="panel panel-default">
+                <div class="panel-heading pn font-bold"><i class="fa fa-money fs16 p12 mr10 bg-primary"></i></div>
+             
+	
+	           <div class="panel-body">
+	 
+                   <div class="col-lg-7">
+
+             <div class="form-group col-lg-12 ">
+                        <label class="col-lg-4 control-label pt10  pn mn text-right"> {{"PR.PayrollDataEntry.EmployeeCode"|translate}}<b class="text-danger ">*</b></label>
+                        <div class="col-lg-8">
+
+
+                              <select kendo-drop-down-list  name="empcode"  ng-model="dd"
+                                     k-options="empcode" class="borderMe w-full-imp " id="empCode"
+                                    required></select>
+
+
+                     
+                       
+                     
+                    </div>
+                    </div>
+
+
+
+
+                  
+
+                <div class="form-group col-lg-12 ">
+                        <label class="col-lg-4 control-label pt10  pn mn text-right"> {{"PR.PayrollDataEntry.Amount"|translate}}<b class="text-danger ">*</b></label>
+                        <div class="col-lg-8">
+
+
+                              <select kendo-drop-down-list ng-model="dgd" name="Amount" id="amount"
+                                     k-options="amount" class="borderMe w-full-imp "
+                                    required></select>
+
+
+                    
+                                    
+                       
+                     
+                    </div>
+                    </div>
+
+                      <div class="form-group col-lg-12 ">
+                        <label class="col-lg-4 control-label pt10  pn mn text-right"> {{"PR.PayrollDataEntry.Remarks"|translate}}</label>
+                        <div class="col-lg-8">
+
+
+                              <select kendo-drop-down-list id="remarks"
+                                     k-options="remarks" class="borderMe w-full-imp "
+                                    required></select>
+
+
+                     
+                       
+                     
+                    </div>
+                    </div>
+
+</div>
+
+                   <div  class="col-lg-5 pn" style="  display: inline-block;
+   max-height:192px;
+    overflow-y: scroll;">
+
+
+                       <table class="table table-striped b b-light " >
+        <thead>
+          <tr class="bg-dark ">
+            <th style="width:20px;">
+              <label class="i-checks m-b-none">
+                <input id="SheetName" type="checkbox"><i></i>
+              </label>
+            </th>
+            <th> {{"PR.PayrollDataEntry.SheetName"|translate}}</th>
+         
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr>
+            <td><label class="i-checks m-b-none"><input type="checkbox" ><i></i></label></td>
+            <td>Sheet1</td>
+           
+          </tr>
+          <tr>
+            <td><label class="i-checks m-b-none"><input type="checkbox" ><i></i></label></td>
+            <td>Sheet2</td>
+           
+          </tr>
+         
+         <tr>
+            <td><label class="i-checks m-b-none"><input type="checkbox" ><i></i></label></td>
+            <td>Sheet3</td>
+           
+          </tr>
+          <tr>
+            <td><label class="i-checks m-b-none"><input type="checkbox" ><i></i></label></td>
+            <td>Sheet4</td>
+           
+          </tr>
+          <tr>
+            <td><label class="i-checks m-b-none"><input type="checkbox" ><i></i></label></td>
+            <td>Sheet5</td>
+           
+          </tr>
+          <tr>
+            <td><label class="i-checks m-b-none"><input type="checkbox" ><i></i></label></td>
+            <td>Sheet6</td>
+           
+          </tr>
+         
+
+
+
+        </tbody>
+      </table>
+                       
+                       
+                       
+                     </div>
+
+                  </div>
+        
+
+
+
+            </div>
+
+
+
+               
+                  
+
+
+
+
+
+	
+	
+	 </div>
+	
+	   
+	
+			
+	        
+	 
+	       </div>
+
+           <div class="alert alert-info ng-binding">
+              - {{"PR.PayrollDataEntry.note1"|translate}} <br />
+              - {{"PR.PayrollDataEntry.note2"|translate}}<br />
+              - {{"PR.PayrollDataEntry.note3"|translate}}<br />
+           </div>
+
+          
+
+
+
+           
+
+           <footer class="modal-footer ">
+                <button type="submit" id="import" class="btn btn-success ng-binding" ng-click="ok(dataentry)"> {{"PR.PayrollDataEntry.Import"|translate}}</button>
+               <button type="submit" id="importAndClose" class="btn btn-success ng-binding" ng-click="ok(dataentry)"> {{"PR.PayrollDataEntry.Importandclose"|translate}}</button>
+	 
+	           </footer>
+	
+       </div>
+       
+
+
+
+        </form>

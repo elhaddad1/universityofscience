@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+    Response.Headers["X-UA-Compatible"] = "IE=10";
+}
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8" />
+
+
+    <title ng-bind="translate(cutTranslateFilter($state.current.data.displayName)) +' - Andalusia | HMIS '">Andalusia | HMIS</title>
+
+
+
+
+
+    @Styles.Render("~/Content/Style")
+    @Styles.Render("~/Content/translateFilesTweak")
+</head>
+<body ng-cloak class="{{selectLang=='Arabic'?'ar':'en'}}">
+
+
+
+    <div class="app " id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view></div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/angulartranslate")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/common")
+
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/directives")
+
+
+    @*Jasmine Client Unit Testing Lib.*@
+@*
+    @Styles.Render("~/Content/jasmineCss")
+    @Scripts.Render("~/bundles/jasmineJs")*@ 
+</body>
+</html>

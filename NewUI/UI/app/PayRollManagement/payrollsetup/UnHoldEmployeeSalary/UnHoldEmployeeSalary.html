@@ -1,0 +1,46 @@
+﻿
+<div>
+
+    <div data-ng-include="'app/Shared/partialView/_loading.html'"></div>
+
+    <form id="unHoldEmployeeSalary" name="unHoldEmployeeSalary" novalidate ng-init="PageLoad()">
+
+        <div class="actions">
+            <button id="addNew" class="    btn btn-white btn-xs mr5 fs14  " ui-sref="app.payroll.payrollsetup.UnHoldEmployeeSalaryaddnew" ng-click="addNew()"> <i class="glyphicon glyphicon-plus mr5"></i>  {{"PR.common.AddNew"|translate}} </button>
+        </div>
+
+
+        <div class="hbox hbox-auto-xs hbox-auto-sm pt35">
+            <div class="bg-light lter b-b wrapper-md">
+                <h1 class="m-n font-thin h3">
+                    <i class="fa  fa-money text-white bg-info lter p10 fs25 mr5 ml5 centerNav"></i>
+                    {{"MP.UnHoldEmployeeSalary"|translate}}
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="wrapper-md">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading pn font-bold">
+                    <i class="fa fa-money fs16 p12 mr10 bg-primary"></i>
+
+
+                    {{"PR.unhold.EmployeeItemValue"|translate}}
+
+                </div>
+
+
+
+
+                <div class="panel-body">
+                    <div kendo-grid="UnHoldEmployeeSalary" id="unHoldEmployeeSalary" on-filter="" k-options="UnHoldEmployeeSalaryOptions" class="standardGrid small" k-ng-delay="UnHoldEmployeeSalaryOptions" k-rebind="UnHoldEmployeeSalaryOptions"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>

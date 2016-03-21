@@ -1,0 +1,163 @@
+.text-center {
+  text-align: center;
+}
+
+.multiple-date-picker {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.multiple-date-picker,
+.picker-top-row,
+.picker-days-week-row,
+.picker-days-row {
+  width: 100%;
+}
+
+.picker-top-row > div {
+  display: inline-block;
+}
+
+.picker-navigate {
+  width: 16.66%;
+}
+
+.picker-navigate:hover {
+  cursor: pointer;
+}
+
+.picker-navigate.disabled,
+.picker-navigate.disabled:hover {
+  color: #ddd;
+  cursor: no-drop!important;
+}
+
+
+.picker-navigate.disabled,
+.picker-navigate.disabled .k-icon {
+  color: #ddd;
+  cursor: no-drop!important;
+}
+
+
+.picker-month {
+  width: 66.66%;
+}
+
+.picker-days-week-row > div {
+  width: 14.28%;
+  display: inline-block;
+}
+
+.picker-days-row > div {
+  width: 14.28%;
+  display: inline-block;
+}
+
+.picker-days-row > div {
+  width: 14.28%;
+  display: inline-block;
+}
+
+.picker-top-row,
+.picker-day {
+  padding: 10px 0;
+}
+
+.picker-day {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.picker-day.today,
+.picker-day.today:hover,
+.picker-day.today.picker-selected,
+.picker-day.today.picker-off,
+.picker-day.today.picker-off:hover {
+  /*color: #00a3ff;*/
+  font-weight: bold;
+}
+
+.picker-day:not(.picker-off):not(.picker-empty):hover {
+  /*background-color: #c6000b;*/
+    background-color:#EEEEEE;
+/*  color: #bbbbbb;*/
+    border-radius: 50%;
+  cursor: pointer;
+}
+
+.picker-day.picker-selected {
+  border-radius: 50%;
+  /*background-color: #c6000b;*/
+    background-color: #3F51B5!important;
+  color: #ffffff;
+}
+
+/*.picker-day.picker-off,
+.picker-day.picker-off:hover {
+  background-color: #eeeeee;
+  color: #bbbbbb;
+  cursor: no-drop;
+  /*pointer-events:none;*/
+/*}*/
+
+.picker-day.picker-empty,
+.picker-day.picker-empty:hover {
+  background-color: #fafafa;
+  cursor: default;
+}
+
+/*MY CHANGES*/
+.picker-navigate:hover{
+
+opacity:1;
+
+}
+
+.picker-navigate{
+
+opacity:0.4;
+
+
+}
+
+
+.picker-day.picker-off{
+  background-color: transparent;
+  color: #bbbbbb;
+  cursor: no-drop;
+
+}
+
+ .picker-day.picker-off:hover {
+ background-color: #eeeeee;;
+  border-radius: 50%;
+
+
+
+}
+/*END*/
+
+
+.picker-day.picker-empty{
+
+background-color:inherit
+}
+
+.picker-day{
+
+border-color:transparent;
+}
+.multiple-date-picker{
+
+border:1px solid red;
+border-color: rgba(0,0,0,0.2);
+border-top-width:0px;
+
+padding-bottom:5px
+}

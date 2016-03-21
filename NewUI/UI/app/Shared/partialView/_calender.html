@@ -1,0 +1,57 @@
+
+
+
+
+
+<div class="hidden">
+
+<!-- calender -->
+  <button class="btn btn-default no-shadow pos-abt" ui-toggle-class="active" target=".calender"><i class="fa fa-calendar fs18 text-info"></i></button>
+  <div class="panel-heading">
+      Calender
+  </div>
+
+
+      <div class="p5" ng-controller="schedulepersonalCtrl"  >
+          
+          
+
+
+     <form class="form-inline" role="form">
+      
+
+        <div kendo-scheduler k-options="schedulerOptions"  >
+            <span k-event-template class='custom-event'>{{dataItem.title}}</span>
+            <div k-all-day-event-template class='custom-all-day-event'>{{dataItem.title}}</div>
+   </div>
+
+
+<!--<style>
+
+
+
+ .custom-all-day-event {
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    .k-event, .k-task-complete { background-color:#23b7e5 !important;border:none !important;   }
+ 
+
+
+
+</style>-->
+
+
+
+
+
+      </form>
+          
+          
+     
+      </div>
+  
+<!-- /calender -->
+
+    </div>
