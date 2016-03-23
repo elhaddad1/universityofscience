@@ -1,5 +1,5 @@
 ﻿app.controller('nav', ['$scope', '$translate', function ($scope, $translate) {
-
+    debugger;
     //ShowData = function ()
     //{
     //    return $http.get('http://localhost:16161/api/Async/menuElements');

@@ -1,10 +1,11 @@
 'use strict';
 
 /* Controllers */
-
+debugger;
 angular.module('app')
     .controller('AppCtrl', ['$scope', '$translate', '$localStorage', '$window', '$rootScope', '$q', '$http', '$compile','kendoTranslate',
         function($scope, $translate, $localStorage, $window, $rootScope, $q, $http, $compile,kendoTranslate) {
+            debugger;
             // add 'ie' classes to html
             var isIE = !!navigator.userAgent.match(/MSIE/i);
             isIE && angular.element($window.document.body).addClass('ie');
@@ -207,7 +208,7 @@ window.TRANSLATE=$scope.translate;
 
             $scope.urls = [];
 
-            $scope.systemModulesUrls = [OrganizationManagementRoute().OrganizationManagementRoutes(), AdministrationRoute().AdministrationRoutes(), payRollManagementRoute().payRollManagementRoutes(), timeManagementRoute().timeManagementRoutes()];
+            $scope.systemModulesUrls = [payRollManagementRoute().payRollManagementRoutes()];
             $scope.systemModulesUrls.forEach(function(urlCollection) {
 
                 urlCollection.forEach(function(u) {

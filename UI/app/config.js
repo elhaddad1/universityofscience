@@ -1,4 +1,4 @@
-﻿// config
+// config
 'use strict';
 
 var app =
@@ -19,11 +19,28 @@ angular.module('app')
         // $compileProvider.debugInfoEnabled(false);
     }
     ])
-    .run(function ($rootScope, $http, $q, $state, $log) {
+  .config(['$translateProvider', function ($translateProvider) {
+      // Register a loader for the static files
+      // So, the module will search missing translation tables under the specified urls.
+      // Those urls are [prefix][langKey][suffix].
+
+      $translateProvider.useLoader('$translatePartialLoader', {
+          urlTemplate: '/app/{part}/locale/{lang}.js'
+      });
+
+      // Tell the module what language to use by default
+      $translateProvider.preferredLanguage('en');
+      // Tell the module to store the language in the local storage
+      $translateProvider.useLocalStorage();
+  }])    
+    .run(function ($rootScope, $translate, $http, $q, $state, $log) {
         $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
             return loginService($http, $q, $rootScope, $state, $log).AuthorizeUser(event, toState);
         });
 
+        $rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+            $translate.refresh();
+        });
 
         return $q.when(loginService($http, $q, $rootScope, $state, $log).Login()).then(function () {
         });
@@ -52,9 +69,9 @@ app.factory('httpInterceptor', function ($q, $rootScope, $log, $injector) {
                 $rootScope.$broadcast('loading:error');
             }
 
-            // console.log('ERRRRRRRRRRRRRR')
-            // $scope.showProgress = false;
-            //  toaster.pop('error', '', $translate.instant('MP.ERROR'));
+// console.log('ERRRRRRRRRRRRRR')
+                    // $scope.showProgress = false;
+                    //  toaster.pop('error', '', $translate.instant('MP.ERROR'));
             // handle any bad request or unauthorized status
             if (response.status == 400 || response.status == 401) {
                 //if ($rootScope.errorList == undefined) {

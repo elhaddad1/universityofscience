@@ -35,6 +35,7 @@ angular.module('app')
   }])    
     .run(function ($rootScope, $translate, $http, $q, $state, $log) {
         $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            debugger;
             return loginService($http, $q, $rootScope, $state, $log).AuthorizeUser(event, toState);
         });
 

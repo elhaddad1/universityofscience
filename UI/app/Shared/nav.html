@@ -1,0 +1,90 @@
+<!-- list -->
+<ul class="nav" id="sideNav" ng-controller="nav" >
+
+   
+       
+    <li class="hidden-folded ">
+        <!-- search form -->
+        <form  class="navbar-form pt20 pb20 pr10 pl10 pn mtn mbn navbar-form-sm navbar-left shift bg-primary" ui-shift="prependTo" target=".navbar-collapse" role="search" >
+            <div class="form-group">
+                <div class="input-group" style=" width: 215px !important;">
+                    <input type="text" ng-model="search" ng-change="expandAllNode(search)" class="form-control input-sm bg-light no-border rounded padder" 
+                    placeholder='{{"MP.nav"|translate}}' autofocus="autofocus" >
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <!-- / search form -->
+
+
+    </li>
+
+    <li class="line hidden-folded" style="margin:0px; background-color:#7266ba;"></li>
+
+
+    <li class="bordernav"  ng-repeat="item in navData |  filter:search" ng-class="{active:$state.includes('{{::item.url}}')}">
+     
+
+
+        <a style="background-color:white !important;" ng-if="item.sub.length== 0" ui-sref="{{::item.url}}">
+            <i class="{{::item.icon}} fs20 "></i>
+            <span class="font-bold centerNav" translate="{{::item.name}}">{{::item.name}}</span>
+        </a>
+
+
+        <a style="background-color:white !important;" ng-if="item.sub.length> 0" href class="auto">
+            <span class="pull-{{selectLang=='Arabic'?'left':'right'}} text-muted">
+                <i class="fa fa-fw fa-angle-{{selectLang=='Arabic'?'left':'right'}} text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+            <i class=" {{::item.icon}} fs20 centernav"></i>
+            <span class="font-bold">{{::item.name}}</span>
+        </a>
+
+
+
+        <ul ng-if="item.sub.length> 0" class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span>{{::item.name}}</span>
+                </a>
+            </li>
+
+
+            <tree style="background-color:rgba(216, 237, 242, 0.47) !important;" ng-repeat="child in item.sub | filter:search" menu="child">
+
+
+
+            </tree>
+
+
+
+
+
+        </ul>
+
+
+    </li>
+
+
+
+
+
+
+
+ 
+
+
+</ul>
+<!-- / list -->
+
+
+<script>
+
+  
+
+
+
+</script>

@@ -1,0 +1,14 @@
+﻿<div class="modal-header confirmationDir">
+    <i class="fa fa-warning text-danger pull-left flip flip-mr10 text-3x" style="font-size: 33px;"></i>
+    <h3 class="modal-title">{{title}}</h3>
+</div>
+<div class="modal-body">
+
+    <div class="text-center font-bold">{{message}}</div>
+</div>
+<div class="modal-footer {{onlyOk?'text-center-imp':''}}">
+    <button class="btn btn-primary"  ng-click="ok()">{{yes}}</button>
+    <button class="btn btn-default" ng-hide="onlyOk" ng-click="cancel()">{{no}}</button>
+</div>
+
+

@@ -1,0 +1,1774 @@
+/*******************************************************************************
+ *              bootstrap-rtl (version 3.3.4)
+ *      Author: Morteza Ansarinia (http://github.com/morteza)
+ *  Created on: August 13,2015
+ *     Project: bootstrap-rtl
+ *   Copyright: Unlicensed Public Domain
+ *******************************************************************************/
+.k-rtl, .ar .modal {
+  /*# sourceMappingURL=bootstrap-rtl.css.map */
+}
+
+.k-rtl html, .ar .modal html {
+  direction: rtl;
+}
+
+.k-rtl body, .ar .modal body {
+  direction: rtl;
+}
+
+.k-rtl .flip.text-left, .ar .modal .flip.text-left {
+  text-align: right;
+}
+
+.k-rtl .flip.text-right, .ar .modal .flip.text-right {
+  text-align: left;
+}
+
+.k-rtl .list-unstyled, .ar .modal .list-unstyled {
+  padding-right: 0;
+  padding-left: initial;
+}
+
+.k-rtl .list-inline, .ar .modal .list-inline {
+  padding-right: 0;
+  padding-left: initial;
+  margin-right: -5px;
+  margin-left: 0;
+}
+
+.k-rtl dd, .ar .modal dd {
+  margin-right: 0;
+  margin-left: initial;
+}
+
+@media (min-width: 768px) {
+  .k-rtl .dl-horizontal dt, .ar .modal .dl-horizontal dt {
+    float: right;
+    clear: right;
+    text-align: left;
+  }
+  .k-rtl .dl-horizontal dd, .ar .modal .dl-horizontal dd {
+    margin-right: 180px;
+    margin-left: 0;
+  }
+}
+
+.k-rtl blockquote, .ar .modal blockquote {
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+
+.k-rtl .blockquote-reverse,
+.k-rtl blockquote.pull-left, .ar .modal .blockquote-reverse,
+.ar .modal blockquote.pull-left {
+  padding-left: 15px;
+  padding-right: 0;
+  border-left: 5px solid #eeeeee;
+  border-right: 0;
+  text-align: left;
+}
+
+.k-rtl .col-xs-1, .k-rtl .col-sm-1, .k-rtl .col-md-1, .k-rtl .col-lg-1, .k-rtl .col-xs-2, .k-rtl .col-sm-2, .k-rtl .col-md-2, .k-rtl .col-lg-2, .k-rtl .col-xs-3, .k-rtl .col-sm-3, .k-rtl .col-md-3, .k-rtl .col-lg-3, .k-rtl .col-xs-4, .k-rtl .col-sm-4, .k-rtl .col-md-4, .k-rtl .col-lg-4, .k-rtl .col-xs-5, .k-rtl .col-sm-5, .k-rtl .col-md-5, .k-rtl .col-lg-5, .k-rtl .col-xs-6, .k-rtl .col-sm-6, .k-rtl .col-md-6, .k-rtl .col-lg-6, .k-rtl .col-xs-7, .k-rtl .col-sm-7, .k-rtl .col-md-7, .k-rtl .col-lg-7, .k-rtl .col-xs-8, .k-rtl .col-sm-8, .k-rtl .col-md-8, .k-rtl .col-lg-8, .k-rtl .col-xs-9, .k-rtl .col-sm-9, .k-rtl .col-md-9, .k-rtl .col-lg-9, .k-rtl .col-xs-10, .k-rtl .col-sm-10, .k-rtl .col-md-10, .k-rtl .col-lg-10, .k-rtl .col-xs-11, .k-rtl .col-sm-11, .k-rtl .col-md-11, .k-rtl .col-lg-11, .k-rtl .col-xs-12, .k-rtl .col-sm-12, .k-rtl .col-md-12, .k-rtl .col-lg-12, .ar .modal .col-xs-1, .ar .modal .col-sm-1, .ar .modal .col-md-1, .ar .modal .col-lg-1, .ar .modal .col-xs-2, .ar .modal .col-sm-2, .ar .modal .col-md-2, .ar .modal .col-lg-2, .ar .modal .col-xs-3, .ar .modal .col-sm-3, .ar .modal .col-md-3, .ar .modal .col-lg-3, .ar .modal .col-xs-4, .ar .modal .col-sm-4, .ar .modal .col-md-4, .ar .modal .col-lg-4, .ar .modal .col-xs-5, .ar .modal .col-sm-5, .ar .modal .col-md-5, .ar .modal .col-lg-5, .ar .modal .col-xs-6, .ar .modal .col-sm-6, .ar .modal .col-md-6, .ar .modal .col-lg-6, .ar .modal .col-xs-7, .ar .modal .col-sm-7, .ar .modal .col-md-7, .ar .modal .col-lg-7, .ar .modal .col-xs-8, .ar .modal .col-sm-8, .ar .modal .col-md-8, .ar .modal .col-lg-8, .ar .modal .col-xs-9, .ar .modal .col-sm-9, .ar .modal .col-md-9, .ar .modal .col-lg-9, .ar .modal .col-xs-10, .ar .modal .col-sm-10, .ar .modal .col-md-10, .ar .modal .col-lg-10, .ar .modal .col-xs-11, .ar .modal .col-sm-11, .ar .modal .col-md-11, .ar .modal .col-lg-11, .ar .modal .col-xs-12, .ar .modal .col-sm-12, .ar .modal .col-md-12, .ar .modal .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.k-rtl .col-xs-1, .k-rtl .col-xs-2, .k-rtl .col-xs-3, .k-rtl .col-xs-4, .k-rtl .col-xs-5, .k-rtl .col-xs-6, .k-rtl .col-xs-7, .k-rtl .col-xs-8, .k-rtl .col-xs-9, .k-rtl .col-xs-10, .k-rtl .col-xs-11, .k-rtl .col-xs-12, .ar .modal .col-xs-1, .ar .modal .col-xs-2, .ar .modal .col-xs-3, .ar .modal .col-xs-4, .ar .modal .col-xs-5, .ar .modal .col-xs-6, .ar .modal .col-xs-7, .ar .modal .col-xs-8, .ar .modal .col-xs-9, .ar .modal .col-xs-10, .ar .modal .col-xs-11, .ar .modal .col-xs-12 {
+  float: right;
+}
+
+.k-rtl .col-xs-12, .ar .modal .col-xs-12 {
+  width: 100%;
+}
+
+.k-rtl .col-xs-11, .ar .modal .col-xs-11 {
+  width: 91.66666667%;
+}
+
+.k-rtl .col-xs-10, .ar .modal .col-xs-10 {
+  width: 83.33333333%;
+}
+
+.k-rtl .col-xs-9, .ar .modal .col-xs-9 {
+  width: 75%;
+}
+
+.k-rtl .col-xs-8, .ar .modal .col-xs-8 {
+  width: 66.66666667%;
+}
+
+.k-rtl .col-xs-7, .ar .modal .col-xs-7 {
+  width: 58.33333333%;
+}
+
+.k-rtl .col-xs-6, .ar .modal .col-xs-6 {
+  width: 50%;
+}
+
+.k-rtl .col-xs-5, .ar .modal .col-xs-5 {
+  width: 41.66666667%;
+}
+
+.k-rtl .col-xs-4, .ar .modal .col-xs-4 {
+  width: 33.33333333%;
+}
+
+.k-rtl .col-xs-3, .ar .modal .col-xs-3 {
+  width: 25%;
+}
+
+.k-rtl .col-xs-2, .ar .modal .col-xs-2 {
+  width: 16.66666667%;
+}
+
+.k-rtl .col-xs-1, .ar .modal .col-xs-1 {
+  width: 8.33333333%;
+}
+
+.k-rtl .col-xs-pull-12, .ar .modal .col-xs-pull-12 {
+  left: 100%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-11, .ar .modal .col-xs-pull-11 {
+  left: 91.66666667%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-10, .ar .modal .col-xs-pull-10 {
+  left: 83.33333333%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-9, .ar .modal .col-xs-pull-9 {
+  left: 75%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-8, .ar .modal .col-xs-pull-8 {
+  left: 66.66666667%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-7, .ar .modal .col-xs-pull-7 {
+  left: 58.33333333%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-6, .ar .modal .col-xs-pull-6 {
+  left: 50%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-5, .ar .modal .col-xs-pull-5 {
+  left: 41.66666667%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-4, .ar .modal .col-xs-pull-4 {
+  left: 33.33333333%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-3, .ar .modal .col-xs-pull-3 {
+  left: 25%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-2, .ar .modal .col-xs-pull-2 {
+  left: 16.66666667%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-1, .ar .modal .col-xs-pull-1 {
+  left: 8.33333333%;
+  right: auto;
+}
+
+.k-rtl .col-xs-pull-0, .ar .modal .col-xs-pull-0 {
+  left: auto;
+  right: auto;
+}
+
+.k-rtl .col-xs-push-12, .ar .modal .col-xs-push-12 {
+  right: 100%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-11, .ar .modal .col-xs-push-11 {
+  right: 91.66666667%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-10, .ar .modal .col-xs-push-10 {
+  right: 83.33333333%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-9, .ar .modal .col-xs-push-9 {
+  right: 75%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-8, .ar .modal .col-xs-push-8 {
+  right: 66.66666667%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-7, .ar .modal .col-xs-push-7 {
+  right: 58.33333333%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-6, .ar .modal .col-xs-push-6 {
+  right: 50%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-5, .ar .modal .col-xs-push-5 {
+  right: 41.66666667%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-4, .ar .modal .col-xs-push-4 {
+  right: 33.33333333%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-3, .ar .modal .col-xs-push-3 {
+  right: 25%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-2, .ar .modal .col-xs-push-2 {
+  right: 16.66666667%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-1, .ar .modal .col-xs-push-1 {
+  right: 8.33333333%;
+  left: 0;
+}
+
+.k-rtl .col-xs-push-0, .ar .modal .col-xs-push-0 {
+  right: auto;
+  left: 0;
+}
+
+.k-rtl .col-xs-offset-12, .ar .modal .col-xs-offset-12 {
+  margin-right: 100%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-11, .ar .modal .col-xs-offset-11 {
+  margin-right: 91.66666667%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-10, .ar .modal .col-xs-offset-10 {
+  margin-right: 83.33333333%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-9, .ar .modal .col-xs-offset-9 {
+  margin-right: 75%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-8, .ar .modal .col-xs-offset-8 {
+  margin-right: 66.66666667%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-7, .ar .modal .col-xs-offset-7 {
+  margin-right: 58.33333333%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-6, .ar .modal .col-xs-offset-6 {
+  margin-right: 50%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-5, .ar .modal .col-xs-offset-5 {
+  margin-right: 41.66666667%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-4, .ar .modal .col-xs-offset-4 {
+  margin-right: 33.33333333%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-3, .ar .modal .col-xs-offset-3 {
+  margin-right: 25%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-2, .ar .modal .col-xs-offset-2 {
+  margin-right: 16.66666667%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-1, .ar .modal .col-xs-offset-1 {
+  margin-right: 8.33333333%;
+  margin-left: 0;
+}
+
+.k-rtl .col-xs-offset-0, .ar .modal .col-xs-offset-0 {
+  margin-right: 0%;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .k-rtl .col-sm-1, .k-rtl .col-sm-2, .k-rtl .col-sm-3, .k-rtl .col-sm-4, .k-rtl .col-sm-5, .k-rtl .col-sm-6, .k-rtl .col-sm-7, .k-rtl .col-sm-8, .k-rtl .col-sm-9, .k-rtl .col-sm-10, .k-rtl .col-sm-11, .k-rtl .col-sm-12, .ar .modal .col-sm-1, .ar .modal .col-sm-2, .ar .modal .col-sm-3, .ar .modal .col-sm-4, .ar .modal .col-sm-5, .ar .modal .col-sm-6, .ar .modal .col-sm-7, .ar .modal .col-sm-8, .ar .modal .col-sm-9, .ar .modal .col-sm-10, .ar .modal .col-sm-11, .ar .modal .col-sm-12 {
+    float: right;
+  }
+  .k-rtl .col-sm-12, .ar .modal .col-sm-12 {
+    width: 100%;
+  }
+  .k-rtl .col-sm-11, .ar .modal .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .k-rtl .col-sm-10, .ar .modal .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .k-rtl .col-sm-9, .ar .modal .col-sm-9 {
+    width: 75%;
+  }
+  .k-rtl .col-sm-8, .ar .modal .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .k-rtl .col-sm-7, .ar .modal .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .k-rtl .col-sm-6, .ar .modal .col-sm-6 {
+    width: 50%;
+  }
+  .k-rtl .col-sm-5, .ar .modal .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .k-rtl .col-sm-4, .ar .modal .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .k-rtl .col-sm-3, .ar .modal .col-sm-3 {
+    width: 25%;
+  }
+  .k-rtl .col-sm-2, .ar .modal .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .k-rtl .col-sm-1, .ar .modal .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .k-rtl .col-sm-pull-12, .ar .modal .col-sm-pull-12 {
+    left: 100%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-11, .ar .modal .col-sm-pull-11 {
+    left: 91.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-10, .ar .modal .col-sm-pull-10 {
+    left: 83.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-9, .ar .modal .col-sm-pull-9 {
+    left: 75%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-8, .ar .modal .col-sm-pull-8 {
+    left: 66.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-7, .ar .modal .col-sm-pull-7 {
+    left: 58.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-6, .ar .modal .col-sm-pull-6 {
+    left: 50%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-5, .ar .modal .col-sm-pull-5 {
+    left: 41.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-4, .ar .modal .col-sm-pull-4 {
+    left: 33.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-3, .ar .modal .col-sm-pull-3 {
+    left: 25%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-2, .ar .modal .col-sm-pull-2 {
+    left: 16.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-1, .ar .modal .col-sm-pull-1 {
+    left: 8.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-sm-pull-0, .ar .modal .col-sm-pull-0 {
+    left: auto;
+    right: auto;
+  }
+  .k-rtl .col-sm-push-12, .ar .modal .col-sm-push-12 {
+    right: 100%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-11, .ar .modal .col-sm-push-11 {
+    right: 91.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-10, .ar .modal .col-sm-push-10 {
+    right: 83.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-9, .ar .modal .col-sm-push-9 {
+    right: 75%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-8, .ar .modal .col-sm-push-8 {
+    right: 66.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-7, .ar .modal .col-sm-push-7 {
+    right: 58.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-6, .ar .modal .col-sm-push-6 {
+    right: 50%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-5, .ar .modal .col-sm-push-5 {
+    right: 41.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-4, .ar .modal .col-sm-push-4 {
+    right: 33.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-3, .ar .modal .col-sm-push-3 {
+    right: 25%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-2, .ar .modal .col-sm-push-2 {
+    right: 16.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-1, .ar .modal .col-sm-push-1 {
+    right: 8.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-sm-push-0, .ar .modal .col-sm-push-0 {
+    right: auto;
+    left: 0;
+  }
+  .k-rtl .col-sm-offset-12, .ar .modal .col-sm-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-11, .ar .modal .col-sm-offset-11 {
+    margin-right: 91.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-10, .ar .modal .col-sm-offset-10 {
+    margin-right: 83.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-9, .ar .modal .col-sm-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-8, .ar .modal .col-sm-offset-8 {
+    margin-right: 66.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-7, .ar .modal .col-sm-offset-7 {
+    margin-right: 58.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-6, .ar .modal .col-sm-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-5, .ar .modal .col-sm-offset-5 {
+    margin-right: 41.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-4, .ar .modal .col-sm-offset-4 {
+    margin-right: 33.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-3, .ar .modal .col-sm-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-2, .ar .modal .col-sm-offset-2 {
+    margin-right: 16.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-1, .ar .modal .col-sm-offset-1 {
+    margin-right: 8.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-sm-offset-0, .ar .modal .col-sm-offset-0 {
+    margin-right: 0%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .k-rtl .col-md-1, .k-rtl .col-md-2, .k-rtl .col-md-3, .k-rtl .col-md-4, .k-rtl .col-md-5, .k-rtl .col-md-6, .k-rtl .col-md-7, .k-rtl .col-md-8, .k-rtl .col-md-9, .k-rtl .col-md-10, .k-rtl .col-md-11, .k-rtl .col-md-12, .ar .modal .col-md-1, .ar .modal .col-md-2, .ar .modal .col-md-3, .ar .modal .col-md-4, .ar .modal .col-md-5, .ar .modal .col-md-6, .ar .modal .col-md-7, .ar .modal .col-md-8, .ar .modal .col-md-9, .ar .modal .col-md-10, .ar .modal .col-md-11, .ar .modal .col-md-12 {
+    float: right;
+  }
+  .k-rtl .col-md-12, .ar .modal .col-md-12 {
+    width: 100%;
+  }
+  .k-rtl .col-md-11, .ar .modal .col-md-11 {
+    width: 91.66666667%;
+  }
+  .k-rtl .col-md-10, .ar .modal .col-md-10 {
+    width: 83.33333333%;
+  }
+  .k-rtl .col-md-9, .ar .modal .col-md-9 {
+    width: 75%;
+  }
+  .k-rtl .col-md-8, .ar .modal .col-md-8 {
+    width: 66.66666667%;
+  }
+  .k-rtl .col-md-7, .ar .modal .col-md-7 {
+    width: 58.33333333%;
+  }
+  .k-rtl .col-md-6, .ar .modal .col-md-6 {
+    width: 50%;
+  }
+  .k-rtl .col-md-5, .ar .modal .col-md-5 {
+    width: 41.66666667%;
+  }
+  .k-rtl .col-md-4, .ar .modal .col-md-4 {
+    width: 33.33333333%;
+  }
+  .k-rtl .col-md-3, .ar .modal .col-md-3 {
+    width: 25%;
+  }
+  .k-rtl .col-md-2, .ar .modal .col-md-2 {
+    width: 16.66666667%;
+  }
+  .k-rtl .col-md-1, .ar .modal .col-md-1 {
+    width: 8.33333333%;
+  }
+  .k-rtl .col-md-pull-12, .ar .modal .col-md-pull-12 {
+    left: 100%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-11, .ar .modal .col-md-pull-11 {
+    left: 91.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-10, .ar .modal .col-md-pull-10 {
+    left: 83.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-9, .ar .modal .col-md-pull-9 {
+    left: 75%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-8, .ar .modal .col-md-pull-8 {
+    left: 66.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-7, .ar .modal .col-md-pull-7 {
+    left: 58.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-6, .ar .modal .col-md-pull-6 {
+    left: 50%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-5, .ar .modal .col-md-pull-5 {
+    left: 41.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-4, .ar .modal .col-md-pull-4 {
+    left: 33.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-3, .ar .modal .col-md-pull-3 {
+    left: 25%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-2, .ar .modal .col-md-pull-2 {
+    left: 16.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-1, .ar .modal .col-md-pull-1 {
+    left: 8.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-md-pull-0, .ar .modal .col-md-pull-0 {
+    left: auto;
+    right: auto;
+  }
+  .k-rtl .col-md-push-12, .ar .modal .col-md-push-12 {
+    right: 100%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-11, .ar .modal .col-md-push-11 {
+    right: 91.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-10, .ar .modal .col-md-push-10 {
+    right: 83.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-9, .ar .modal .col-md-push-9 {
+    right: 75%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-8, .ar .modal .col-md-push-8 {
+    right: 66.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-7, .ar .modal .col-md-push-7 {
+    right: 58.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-6, .ar .modal .col-md-push-6 {
+    right: 50%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-5, .ar .modal .col-md-push-5 {
+    right: 41.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-4, .ar .modal .col-md-push-4 {
+    right: 33.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-3, .ar .modal .col-md-push-3 {
+    right: 25%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-2, .ar .modal .col-md-push-2 {
+    right: 16.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-1, .ar .modal .col-md-push-1 {
+    right: 8.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-md-push-0, .ar .modal .col-md-push-0 {
+    right: auto;
+    left: 0;
+  }
+  .k-rtl .col-md-offset-12, .ar .modal .col-md-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-11, .ar .modal .col-md-offset-11 {
+    margin-right: 91.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-10, .ar .modal .col-md-offset-10 {
+    margin-right: 83.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-9, .ar .modal .col-md-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-8, .ar .modal .col-md-offset-8 {
+    margin-right: 66.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-7, .ar .modal .col-md-offset-7 {
+    margin-right: 58.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-6, .ar .modal .col-md-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-5, .ar .modal .col-md-offset-5 {
+    margin-right: 41.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-4, .ar .modal .col-md-offset-4 {
+    margin-right: 33.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-3, .ar .modal .col-md-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-2, .ar .modal .col-md-offset-2 {
+    margin-right: 16.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-1, .ar .modal .col-md-offset-1 {
+    margin-right: 8.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-md-offset-0, .ar .modal .col-md-offset-0 {
+    margin-right: 0%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .k-rtl .col-lg-1, .k-rtl .col-lg-2, .k-rtl .col-lg-3, .k-rtl .col-lg-4, .k-rtl .col-lg-5, .k-rtl .col-lg-6, .k-rtl .col-lg-7, .k-rtl .col-lg-8, .k-rtl .col-lg-9, .k-rtl .col-lg-10, .k-rtl .col-lg-11, .k-rtl .col-lg-12, .ar .modal .col-lg-1, .ar .modal .col-lg-2, .ar .modal .col-lg-3, .ar .modal .col-lg-4, .ar .modal .col-lg-5, .ar .modal .col-lg-6, .ar .modal .col-lg-7, .ar .modal .col-lg-8, .ar .modal .col-lg-9, .ar .modal .col-lg-10, .ar .modal .col-lg-11, .ar .modal .col-lg-12 {
+    float: right;
+  }
+  .k-rtl .col-lg-12, .ar .modal .col-lg-12 {
+    width: 100%;
+  }
+  .k-rtl .col-lg-11, .ar .modal .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .k-rtl .col-lg-10, .ar .modal .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .k-rtl .col-lg-9, .ar .modal .col-lg-9 {
+    width: 75%;
+  }
+  .k-rtl .col-lg-8, .ar .modal .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .k-rtl .col-lg-7, .ar .modal .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .k-rtl .col-lg-6, .ar .modal .col-lg-6 {
+    width: 50%;
+  }
+  .k-rtl .col-lg-5, .ar .modal .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .k-rtl .col-lg-4, .ar .modal .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .k-rtl .col-lg-3, .ar .modal .col-lg-3 {
+    width: 25%;
+  }
+  .k-rtl .col-lg-2, .ar .modal .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .k-rtl .col-lg-1, .ar .modal .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .k-rtl .col-lg-pull-12, .ar .modal .col-lg-pull-12 {
+    left: 100%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-11, .ar .modal .col-lg-pull-11 {
+    left: 91.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-10, .ar .modal .col-lg-pull-10 {
+    left: 83.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-9, .ar .modal .col-lg-pull-9 {
+    left: 75%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-8, .ar .modal .col-lg-pull-8 {
+    left: 66.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-7, .ar .modal .col-lg-pull-7 {
+    left: 58.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-6, .ar .modal .col-lg-pull-6 {
+    left: 50%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-5, .ar .modal .col-lg-pull-5 {
+    left: 41.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-4, .ar .modal .col-lg-pull-4 {
+    left: 33.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-3, .ar .modal .col-lg-pull-3 {
+    left: 25%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-2, .ar .modal .col-lg-pull-2 {
+    left: 16.66666667%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-1, .ar .modal .col-lg-pull-1 {
+    left: 8.33333333%;
+    right: auto;
+  }
+  .k-rtl .col-lg-pull-0, .ar .modal .col-lg-pull-0 {
+    left: auto;
+    right: auto;
+  }
+  .k-rtl .col-lg-push-12, .ar .modal .col-lg-push-12 {
+    right: 100%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-11, .ar .modal .col-lg-push-11 {
+    right: 91.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-10, .ar .modal .col-lg-push-10 {
+    right: 83.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-9, .ar .modal .col-lg-push-9 {
+    right: 75%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-8, .ar .modal .col-lg-push-8 {
+    right: 66.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-7, .ar .modal .col-lg-push-7 {
+    right: 58.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-6, .ar .modal .col-lg-push-6 {
+    right: 50%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-5, .ar .modal .col-lg-push-5 {
+    right: 41.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-4, .ar .modal .col-lg-push-4 {
+    right: 33.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-3, .ar .modal .col-lg-push-3 {
+    right: 25%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-2, .ar .modal .col-lg-push-2 {
+    right: 16.66666667%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-1, .ar .modal .col-lg-push-1 {
+    right: 8.33333333%;
+    left: 0;
+  }
+  .k-rtl .col-lg-push-0, .ar .modal .col-lg-push-0 {
+    right: auto;
+    left: 0;
+  }
+  .k-rtl .col-lg-offset-12, .ar .modal .col-lg-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-11, .ar .modal .col-lg-offset-11 {
+    margin-right: 91.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-10, .ar .modal .col-lg-offset-10 {
+    margin-right: 83.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-9, .ar .modal .col-lg-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-8, .ar .modal .col-lg-offset-8 {
+    margin-right: 66.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-7, .ar .modal .col-lg-offset-7 {
+    margin-right: 58.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-6, .ar .modal .col-lg-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-5, .ar .modal .col-lg-offset-5 {
+    margin-right: 41.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-4, .ar .modal .col-lg-offset-4 {
+    margin-right: 33.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-3, .ar .modal .col-lg-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-2, .ar .modal .col-lg-offset-2 {
+    margin-right: 16.66666667%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-1, .ar .modal .col-lg-offset-1 {
+    margin-right: 8.33333333%;
+    margin-left: 0;
+  }
+  .k-rtl .col-lg-offset-0, .ar .modal .col-lg-offset-0 {
+    margin-right: 0%;
+    margin-left: 0;
+  }
+}
+
+.k-rtl caption, .ar .modal caption {
+  text-align: right;
+}
+
+.k-rtl th, .ar .modal th {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .k-rtl .table-responsive > .table-bordered, .ar .modal .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .k-rtl .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .k-rtl .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .k-rtl .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .k-rtl .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .k-rtl .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .k-rtl .table-responsive > .table-bordered > tfoot > tr > td:first-child, .ar .modal .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .ar .modal .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .ar .modal .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .ar .modal .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .ar .modal .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .ar .modal .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-right: 0;
+    border-left: initial;
+  }
+  .k-rtl .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .k-rtl .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .k-rtl .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .k-rtl .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .k-rtl .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .k-rtl .table-responsive > .table-bordered > tfoot > tr > td:last-child, .ar .modal .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .ar .modal .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .ar .modal .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .ar .modal .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .ar .modal .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .ar .modal .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-left: 0;
+    border-right: initial;
+  }
+}
+
+.k-rtl .radio label,
+.k-rtl .checkbox label, .ar .modal .radio label,
+.ar .modal .checkbox label {
+  padding-right: 20px;
+  padding-left: initial;
+}
+
+.k-rtl .radio input[type="radio"],
+.k-rtl .radio-inline input[type="radio"],
+.k-rtl .checkbox input[type="checkbox"],
+.k-rtl .checkbox-inline input[type="checkbox"], .ar .modal .radio input[type="radio"],
+.ar .modal .radio-inline input[type="radio"],
+.ar .modal .checkbox input[type="checkbox"],
+.ar .modal .checkbox-inline input[type="checkbox"] {
+  margin-right: -20px;
+  margin-left: auto;
+}
+
+.k-rtl .radio-inline,
+.k-rtl .checkbox-inline, .ar .modal .radio-inline,
+.ar .modal .checkbox-inline {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.k-rtl .radio-inline + .radio-inline,
+.k-rtl .checkbox-inline + .checkbox-inline, .ar .modal .radio-inline + .radio-inline,
+.ar .modal .checkbox-inline + .checkbox-inline {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.k-rtl .has-feedback .form-control, .ar .modal .has-feedback .form-control {
+  padding-left: 42.5px;
+  padding-right: 12px;
+}
+
+.k-rtl .form-control-feedback, .ar .modal .form-control-feedback {
+  left: 0;
+  right: auto;
+}
+
+@media (min-width: 768px) {
+  .k-rtl .form-inline label, .ar .modal .form-inline label {
+    padding-right: 0;
+    padding-left: initial;
+  }
+  .k-rtl .form-inline .radio input[type="radio"],
+  .k-rtl .form-inline .checkbox input[type="checkbox"], .ar .modal .form-inline .radio input[type="radio"],
+  .ar .modal .form-inline .checkbox input[type="checkbox"] {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .k-rtl .form-horizontal .control-label, .ar .modal .form-horizontal .control-label {
+    text-align: left;
+  }
+}
+
+.k-rtl .form-horizontal .has-feedback .form-control-feedback, .ar .modal .form-horizontal .has-feedback .form-control-feedback {
+  left: 15px;
+  right: auto;
+}
+
+.k-rtl .caret, .ar .modal .caret {
+  margin-right: 2px;
+  margin-left: 0;
+}
+
+.k-rtl .dropdown-menu, .ar .modal .dropdown-menu {
+  right: 0;
+  left: auto;
+  float: left;
+  text-align: right;
+}
+
+.k-rtl .dropdown-menu.pull-right, .ar .modal .dropdown-menu.pull-right {
+  left: 0;
+  right: auto;
+  float: right;
+}
+
+.k-rtl .dropdown-menu-right, .ar .modal .dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.k-rtl .dropdown-menu-left, .ar .modal .dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+
+@media (min-width: 768px) {
+  .k-rtl .navbar-right .dropdown-menu, .ar .modal .navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+  .k-rtl .navbar-right .dropdown-menu-left, .ar .modal .navbar-right .dropdown-menu-left {
+    left: 0;
+    right: auto;
+  }
+}
+
+.k-rtl .btn-group > .btn,
+.k-rtl .btn-group-vertical > .btn, .ar .modal .btn-group > .btn,
+.ar .modal .btn-group-vertical > .btn {
+  float: right;
+}
+
+.k-rtl .btn-group .btn + .btn,
+.k-rtl .btn-group .btn + .btn-group,
+.k-rtl .btn-group .btn-group + .btn,
+.k-rtl .btn-group .btn-group + .btn-group, .ar .modal .btn-group .btn + .btn,
+.ar .modal .btn-group .btn + .btn-group,
+.ar .modal .btn-group .btn-group + .btn,
+.ar .modal .btn-group .btn-group + .btn-group {
+  margin-right: -1px;
+  margin-left: 0px;
+}
+
+.k-rtl .btn-toolbar, .ar .modal .btn-toolbar {
+  margin-right: -5px;
+  margin-left: 0px;
+}
+
+.k-rtl .btn-toolbar .btn-group,
+.k-rtl .btn-toolbar .input-group, .ar .modal .btn-toolbar .btn-group,
+.ar .modal .btn-toolbar .input-group {
+  float: right;
+}
+
+.k-rtl .btn-toolbar > .btn,
+.k-rtl .btn-toolbar > .btn-group,
+.k-rtl .btn-toolbar > .input-group, .ar .modal .btn-toolbar > .btn,
+.ar .modal .btn-toolbar > .btn-group,
+.ar .modal .btn-toolbar > .input-group {
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+.k-rtl .btn-group > .btn:first-child, .ar .modal .btn-group > .btn:first-child {
+  margin-right: 0;
+}
+
+.k-rtl .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .ar .modal .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.k-rtl .btn-group > .btn:last-child:not(:first-child),
+.k-rtl .btn-group > .dropdown-toggle:not(:first-child), .ar .modal .btn-group > .btn:last-child:not(:first-child),
+.ar .modal .btn-group > .dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.k-rtl .btn-group > .btn-group, .ar .modal .btn-group > .btn-group {
+  float: right;
+}
+
+.k-rtl .btn-group.btn-group-justified > .btn,
+.k-rtl .btn-group.btn-group-justified > .btn-group, .ar .modal .btn-group.btn-group-justified > .btn,
+.ar .modal .btn-group.btn-group-justified > .btn-group {
+  float: none;
+}
+
+.k-rtl .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .ar .modal .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+
+.k-rtl .btn-group > .btn-group:first-child > .btn:last-child,
+.k-rtl .btn-group > .btn-group:first-child > .dropdown-toggle, .ar .modal .btn-group > .btn-group:first-child > .btn:last-child,
+.ar .modal .btn-group > .btn-group:first-child > .dropdown-toggle {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.k-rtl .btn-group > .btn-group:last-child > .btn:first-child, .ar .modal .btn-group > .btn-group:last-child > .btn:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.k-rtl .btn .caret, .ar .modal .btn .caret {
+  margin-right: 0;
+}
+
+.k-rtl .btn-group-vertical > .btn + .btn,
+.k-rtl .btn-group-vertical > .btn + .btn-group,
+.k-rtl .btn-group-vertical > .btn-group + .btn,
+.k-rtl .btn-group-vertical > .btn-group + .btn-group, .ar .modal .btn-group-vertical > .btn + .btn,
+.ar .modal .btn-group-vertical > .btn + .btn-group,
+.ar .modal .btn-group-vertical > .btn-group + .btn,
+.ar .modal .btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-right: 0;
+}
+
+.k-rtl .input-group .form-control, .ar .modal .input-group .form-control {
+  float: right;
+}
+
+.k-rtl .input-group .form-control:first-child,
+.k-rtl .input-group-addon:first-child,
+.k-rtl .input-group-btn:first-child > .btn,
+.k-rtl .input-group-btn:first-child > .btn-group > .btn,
+.k-rtl .input-group-btn:first-child > .dropdown-toggle,
+.k-rtl .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.k-rtl .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .ar .modal .input-group .form-control:first-child,
+.ar .modal .input-group-addon:first-child,
+.ar .modal .input-group-btn:first-child > .btn,
+.ar .modal .input-group-btn:first-child > .btn-group > .btn,
+.ar .modal .input-group-btn:first-child > .dropdown-toggle,
+.ar .modal .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.ar .modal .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.k-rtl .input-group-addon:first-child, .ar .modal .input-group-addon:first-child {
+  border-left: 0px;
+  border-right: 1px solid;
+}
+
+.k-rtl .input-group .form-control:last-child,
+.k-rtl .input-group-addon:last-child,
+.k-rtl .input-group-btn:last-child > .btn,
+.k-rtl .input-group-btn:last-child > .btn-group > .btn,
+.k-rtl .input-group-btn:last-child > .dropdown-toggle,
+.k-rtl .input-group-btn:first-child > .btn:not(:first-child),
+.k-rtl .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .ar .modal .input-group .form-control:last-child,
+.ar .modal .input-group-addon:last-child,
+.ar .modal .input-group-btn:last-child > .btn,
+.ar .modal .input-group-btn:last-child > .btn-group > .btn,
+.ar .modal .input-group-btn:last-child > .dropdown-toggle,
+.ar .modal .input-group-btn:first-child > .btn:not(:first-child),
+.ar .modal .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.k-rtl .input-group-addon:last-child, .ar .modal .input-group-addon:last-child {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right: 0px;
+}
+
+.k-rtl .input-group-btn > .btn + .btn, .ar .modal .input-group-btn > .btn + .btn {
+  margin-right: -1px;
+  margin-left: auto;
+}
+
+.k-rtl .input-group-btn:first-child > .btn,
+.k-rtl .input-group-btn:first-child > .btn-group, .ar .modal .input-group-btn:first-child > .btn,
+.ar .modal .input-group-btn:first-child > .btn-group {
+  margin-left: -1px;
+  margin-right: auto;
+}
+
+.k-rtl .input-group-btn:last-child > .btn,
+.k-rtl .input-group-btn:last-child > .btn-group, .ar .modal .input-group-btn:last-child > .btn,
+.ar .modal .input-group-btn:last-child > .btn-group {
+  margin-right: -1px;
+  margin-left: auto;
+}
+
+.k-rtl .nav, .ar .modal .nav {
+  padding-right: 0;
+  padding-left: initial;
+}
+
+.k-rtl .nav-tabs > li, .ar .modal .nav-tabs > li {
+  float: right;
+}
+
+.k-rtl .nav-tabs > li > a, .ar .modal .nav-tabs > li > a {
+  margin-left: auto;
+  margin-right: -2px;
+  border-radius: 4px 4px 0 0;
+}
+
+.k-rtl .nav-pills > li, .ar .modal .nav-pills > li {
+  float: right;
+}
+
+.k-rtl .nav-pills > li > a, .ar .modal .nav-pills > li > a {
+  border-radius: 4px;
+}
+
+.k-rtl .nav-pills > li + li, .ar .modal .nav-pills > li + li {
+  margin-right: 2px;
+  margin-left: auto;
+}
+
+.k-rtl .nav-stacked > li, .ar .modal .nav-stacked > li {
+  float: none;
+}
+
+.k-rtl .nav-stacked > li + li, .ar .modal .nav-stacked > li + li {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.k-rtl .nav-justified > .dropdown .dropdown-menu, .ar .modal .nav-justified > .dropdown .dropdown-menu {
+  right: auto;
+}
+
+.k-rtl .nav-tabs-justified > li > a, .ar .modal .nav-tabs-justified > li > a {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .k-rtl .nav-tabs-justified > li > a, .ar .modal .nav-tabs-justified > li > a {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .k-rtl .navbar-header, .ar .modal .navbar-header {
+    float: right;
+  }
+}
+
+.k-rtl .navbar-collapse, .ar .modal .navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.k-rtl .navbar-brand, .ar .modal .navbar-brand {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .k-rtl .navbar > .container .navbar-brand,
+  .k-rtl .navbar > .container-fluid .navbar-brand, .ar .modal .navbar > .container .navbar-brand,
+  .ar .modal .navbar > .container-fluid .navbar-brand {
+    margin-right: -15px;
+    margin-left: auto;
+  }
+}
+
+.k-rtl .navbar-toggle, .ar .modal .navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .k-rtl .navbar-nav .open .dropdown-menu > li > a,
+  .k-rtl .navbar-nav .open .dropdown-menu .dropdown-header, .ar .modal .navbar-nav .open .dropdown-menu > li > a,
+  .ar .modal .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 25px 5px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .k-rtl .navbar-nav, .ar .modal .navbar-nav {
+    float: right;
+  }
+  .k-rtl .navbar-nav > li, .ar .modal .navbar-nav > li {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .k-rtl .navbar-left.flip, .ar .modal .navbar-left.flip {
+    float: right !important;
+  }
+  .k-rtl .navbar-right:last-child, .ar .modal .navbar-right:last-child {
+    margin-left: -15px;
+    margin-right: auto;
+  }
+  .k-rtl .navbar-right.flip, .ar .modal .navbar-right.flip {
+    float: left !important;
+    margin-left: -15px;
+    margin-right: auto;
+  }
+  .k-rtl .navbar-right .dropdown-menu, .ar .modal .navbar-right .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .k-rtl .navbar-text, .ar .modal .navbar-text {
+    float: right;
+  }
+  .k-rtl .navbar-text.navbar-right:last-child, .ar .modal .navbar-text.navbar-right:last-child {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.k-rtl .pagination, .ar .modal .pagination {
+  padding-right: 0;
+}
+
+.k-rtl .pagination > li > a,
+.k-rtl .pagination > li > span, .ar .modal .pagination > li > a,
+.ar .modal .pagination > li > span {
+  float: right;
+  margin-right: -1px;
+  margin-left: 0px;
+}
+
+.k-rtl .pagination > li:first-child > a,
+.k-rtl .pagination > li:first-child > span, .ar .modal .pagination > li:first-child > a,
+.ar .modal .pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.k-rtl .pagination > li:last-child > a,
+.k-rtl .pagination > li:last-child > span, .ar .modal .pagination > li:last-child > a,
+.ar .modal .pagination > li:last-child > span {
+  margin-right: -1px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.k-rtl .pager, .ar .modal .pager {
+  padding-right: 0;
+  padding-left: initial;
+}
+
+.k-rtl .pager .next > a,
+.k-rtl .pager .next > span, .ar .modal .pager .next > a,
+.ar .modal .pager .next > span {
+  float: left;
+}
+
+.k-rtl .pager .previous > a,
+.k-rtl .pager .previous > span, .ar .modal .pager .previous > a,
+.ar .modal .pager .previous > span {
+  float: right;
+}
+
+.k-rtl .nav-pills > li > a > .badge, .ar .modal .nav-pills > li > a > .badge {
+  margin-left: 0px;
+  margin-right: 3px;
+}
+
+.k-rtl .list-group-item > .badge, .ar .modal .list-group-item > .badge {
+  float: left;
+}
+
+.k-rtl .list-group-item > .badge + .badge, .ar .modal .list-group-item > .badge + .badge {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.k-rtl .alert-dismissable,
+.k-rtl .alert-dismissible, .ar .modal .alert-dismissable,
+.ar .modal .alert-dismissible {
+  padding-left: 35px;
+  padding-right: 15px;
+}
+
+.k-rtl .alert-dismissable .close,
+.k-rtl .alert-dismissible .close, .ar .modal .alert-dismissable .close,
+.ar .modal .alert-dismissible .close {
+  right: auto;
+  left: -21px;
+}
+
+.k-rtl .progress-bar, .ar .modal .progress-bar {
+  float: right;
+}
+
+.k-rtl .media > .pull-left, .ar .modal .media > .pull-left {
+  margin-right: 10px;
+}
+
+.k-rtl .media > .pull-left.flip, .ar .modal .media > .pull-left.flip {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.k-rtl .media > .pull-right, .ar .modal .media > .pull-right {
+  margin-left: 10px;
+}
+
+.k-rtl .media > .pull-right.flip, .ar .modal .media > .pull-right.flip {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.k-rtl .media-right,
+.k-rtl .media > .pull-right, .ar .modal .media-right,
+.ar .modal .media > .pull-right {
+  padding-right: 10px;
+  padding-left: initial;
+}
+
+.k-rtl .media-left,
+.k-rtl .media > .pull-left, .ar .modal .media-left,
+.ar .modal .media > .pull-left {
+  padding-left: 10px;
+  padding-right: initial;
+}
+
+.k-rtl .media-list, .ar .modal .media-list {
+  padding-right: 0;
+  padding-left: initial;
+  list-style: none;
+}
+
+.k-rtl .list-group, .ar .modal .list-group {
+  padding-right: 0;
+  padding-left: initial;
+}
+
+.k-rtl .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.k-rtl .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.k-rtl .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.k-rtl .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child, .ar .modal .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.ar .modal .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.ar .modal .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.ar .modal .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 0;
+}
+
+.k-rtl .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.k-rtl .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.k-rtl .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.k-rtl .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.k-rtl .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child, .ar .modal .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.ar .modal .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.ar .modal .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.ar .modal .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.ar .modal .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 0;
+}
+
+.k-rtl .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.k-rtl .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.k-rtl .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.k-rtl .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child, .ar .modal .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.ar .modal .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.ar .modal .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.ar .modal .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+}
+
+.k-rtl .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.k-rtl .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.k-rtl .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.k-rtl .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.k-rtl .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child, .ar .modal .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.ar .modal .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.ar .modal .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.ar .modal .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.ar .modal .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 0;
+}
+
+.k-rtl .panel > .table-bordered > thead > tr > th:first-child,
+.k-rtl .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.k-rtl .panel > .table-bordered > tbody > tr > th:first-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.k-rtl .panel > .table-bordered > tfoot > tr > th:first-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.k-rtl .panel > .table-bordered > thead > tr > td:first-child,
+.k-rtl .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.k-rtl .panel > .table-bordered > tbody > tr > td:first-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.k-rtl .panel > .table-bordered > tfoot > tr > td:first-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child, .ar .modal .panel > .table-bordered > thead > tr > th:first-child,
+.ar .modal .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.ar .modal .panel > .table-bordered > tbody > tr > th:first-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.ar .modal .panel > .table-bordered > tfoot > tr > th:first-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.ar .modal .panel > .table-bordered > thead > tr > td:first-child,
+.ar .modal .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.ar .modal .panel > .table-bordered > tbody > tr > td:first-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.ar .modal .panel > .table-bordered > tfoot > tr > td:first-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-right: 0;
+  border-left: none;
+}
+
+.k-rtl .panel > .table-bordered > thead > tr > th:last-child,
+.k-rtl .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.k-rtl .panel > .table-bordered > tbody > tr > th:last-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.k-rtl .panel > .table-bordered > tfoot > tr > th:last-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.k-rtl .panel > .table-bordered > thead > tr > td:last-child,
+.k-rtl .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.k-rtl .panel > .table-bordered > tbody > tr > td:last-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.k-rtl .panel > .table-bordered > tfoot > tr > td:last-child,
+.k-rtl .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child, .ar .modal .panel > .table-bordered > thead > tr > th:last-child,
+.ar .modal .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.ar .modal .panel > .table-bordered > tbody > tr > th:last-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.ar .modal .panel > .table-bordered > tfoot > tr > th:last-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.ar .modal .panel > .table-bordered > thead > tr > td:last-child,
+.ar .modal .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.ar .modal .panel > .table-bordered > tbody > tr > td:last-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.ar .modal .panel > .table-bordered > tfoot > tr > td:last-child,
+.ar .modal .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: none;
+  border-left: 0;
+}
+
+.k-rtl .embed-responsive .embed-responsive-item,
+.k-rtl .embed-responsive iframe,
+.k-rtl .embed-responsive embed,
+.k-rtl .embed-responsive object, .ar .modal .embed-responsive .embed-responsive-item,
+.ar .modal .embed-responsive iframe,
+.ar .modal .embed-responsive embed,
+.ar .modal .embed-responsive object {
+  right: 0;
+  left: auto;
+}
+
+.k-rtl .close, .ar .modal .close {
+  float: left;
+}
+
+.k-rtl .modal-footer, .ar .modal .modal-footer {
+  text-align: left;
+}
+
+.k-rtl .modal-footer.flip, .ar .modal .modal-footer.flip {
+  text-align: right;
+}
+
+.k-rtl .modal-footer .btn + .btn, .ar .modal .modal-footer .btn + .btn {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.k-rtl .modal-footer .btn-group .btn + .btn, .ar .modal .modal-footer .btn-group .btn + .btn {
+  margin-right: -1px;
+  margin-left: auto;
+}
+
+.k-rtl .modal-footer .btn-block + .btn-block, .ar .modal .modal-footer .btn-block + .btn-block {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.k-rtl .popover, .ar .modal .popover {
+  left: auto;
+  text-align: right;
+}
+
+.k-rtl .popover.top > .arrow, .ar .modal .popover.top > .arrow {
+  right: 50%;
+  left: auto;
+  margin-right: -11px;
+  margin-left: auto;
+}
+
+.k-rtl .popover.top > .arrow:after, .ar .modal .popover.top > .arrow:after {
+  margin-right: -10px;
+  margin-left: auto;
+}
+
+.k-rtl .popover.bottom > .arrow, .ar .modal .popover.bottom > .arrow {
+  right: 50%;
+  left: auto;
+  margin-right: -11px;
+  margin-left: auto;
+}
+
+.k-rtl .popover.bottom > .arrow:after, .ar .modal .popover.bottom > .arrow:after {
+  margin-right: -10px;
+  margin-left: auto;
+}
+
+.k-rtl .carousel-control, .ar .modal .carousel-control {
+  right: 0;
+  bottom: 0;
+}
+
+.k-rtl .carousel-control.left, .ar .modal .carousel-control.left {
+  right: auto;
+  left: 0;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.k-rtl .carousel-control.right, .ar .modal .carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.k-rtl .carousel-control .icon-prev,
+.k-rtl .carousel-control .glyphicon-chevron-left, .ar .modal .carousel-control .icon-prev,
+.ar .modal .carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  right: auto;
+  margin-right: -10px;
+}
+
+.k-rtl .carousel-control .icon-next,
+.k-rtl .carousel-control .glyphicon-chevron-right, .ar .modal .carousel-control .icon-next,
+.ar .modal .carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  left: auto;
+  margin-left: -10px;
+}
+
+.k-rtl .carousel-indicators, .ar .modal .carousel-indicators {
+  right: 50%;
+  left: 0;
+  margin-right: -30%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .k-rtl .carousel-control .glyphicon-chevron-left,
+  .k-rtl .carousel-control .icon-prev, .ar .modal .carousel-control .glyphicon-chevron-left,
+  .ar .modal .carousel-control .icon-prev {
+    margin-left: 0;
+    margin-right: -15px;
+  }
+  .k-rtl .carousel-control .glyphicon-chevron-right,
+  .k-rtl .carousel-control .icon-next, .ar .modal .carousel-control .glyphicon-chevron-right,
+  .ar .modal .carousel-control .icon-next {
+    margin-left: 0;
+    margin-right: -15px;
+  }
+  .k-rtl .carousel-caption, .ar .modal .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+}
+
+.k-rtl .pull-right.flip, .ar .modal .pull-right.flip {
+  float: left !important;
+}
+
+.k-rtl .pull-left.flip, .ar .modal .pull-left.flip {
+  float: right !important;
+}
+
+
+
+.ar .modal{
+
+
+ direction: rtl;
+
+}
